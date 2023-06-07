@@ -16,5 +16,10 @@ namespace ITP4915M_project_grp6_YRG
         {
             InitializeComponent();
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            //asdf
+        }
     }
 }

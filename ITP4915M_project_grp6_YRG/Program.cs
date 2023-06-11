@@ -16,7 +16,7 @@ namespace ITP4915M_project_grp6_YRG
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new formLogin());
+            Application.Run(new FrmMain());
         }
     }
 }

@@ -35,3 +35,7 @@ C:\Users\manyi\Desktop\Desktop\IVE(ST)_IT114105(SE)_Sem3_220258636_ManWY\ITP4915
 C:\Users\manyi\Desktop\Desktop\IVE(ST)_IT114105(SE)_Sem3_220258636_ManWY\ITP4915M_SDP\ITP4915M_project_grp6_YRG\ITP4915M_project_grp6_YRG\bin\Debug\Krypton.Toolkit.dll
 C:\Users\manyi\Desktop\Desktop\IVE(ST)_IT114105(SE)_Sem3_220258636_ManWY\ITP4915M_SDP\ITP4915M_project_grp6_YRG\ITP4915M_project_grp6_YRG\bin\Debug\Krypton.Toolkit.xml
 C:\Users\manyi\Desktop\Desktop\IVE(ST)_IT114105(SE)_Sem3_220258636_ManWY\ITP4915M_SDP\ITP4915M_project_grp6_YRG\ITP4915M_project_grp6_YRG\obj\Debug\ITP4915M_project_grp6_YRG.FrmMain.resources
+C:\Users\manyi\Desktop\Desktop\IVE(ST)_IT114105(SE)_Sem3_220258636_ManWY\ITP4915M_SDP\ITP4915M_project_grp6_YRG\ITP4915M_project_grp6_YRG\bin\Debug\WeifenLuo.WinFormsUI.Docking.dll
+C:\Users\manyi\Desktop\Desktop\IVE(ST)_IT114105(SE)_Sem3_220258636_ManWY\ITP4915M_SDP\ITP4915M_project_grp6_YRG\ITP4915M_project_grp6_YRG\bin\Debug\WeifenLuo.WinFormsUI.Docking.ThemeVS2015.dll
+C:\Users\manyi\Desktop\Desktop\IVE(ST)_IT114105(SE)_Sem3_220258636_ManWY\ITP4915M_SDP\ITP4915M_project_grp6_YRG\ITP4915M_project_grp6_YRG\obj\Debug\ITP4915M_project_grp6_YRG.FrmMenu.resources
+C:\Users\manyi\Desktop\Desktop\IVE(ST)_IT114105(SE)_Sem3_220258636_ManWY\ITP4915M_SDP\ITP4915M_project_grp6_YRG\ITP4915M_project_grp6_YRG\obj\Debug\ITP4915M_project_grp6_YRG.FrmHomePage.resources

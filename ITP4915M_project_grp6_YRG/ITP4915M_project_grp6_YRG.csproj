@@ -33,8 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Krypton.Toolkit.70.22.11.312\lib\net472\Krypton.Toolkit.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
     <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -52,6 +56,12 @@
     </Compile>
     <Compile Include="AC_Dashboard.Designer.cs">
       <DependentUpon>AC_Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
     </Compile>
     <Compile Include="Sup_Products.cs">
       <SubType>Form</SubType>
@@ -208,6 +218,9 @@
     <EmbeddedResource Include="AC_Dashboard.resx">
       <DependentUpon>AC_Dashboard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PM_Dashboard.resx">
       <DependentUpon>PM_Dashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -277,6 +290,7 @@
     <EmbeddedResource Include="WC_Stock.resx">
       <DependentUpon>WC_Stock.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -289,6 +303,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\YRG_BLL\YRG_BLL.csproj">
+      <Project>{143a7368-62af-41a7-aeae-4485b2a49462}</Project>
+      <Name>YRG_BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YRG_Model\YRG_Model.csproj">
+      <Project>{50784df3-5f9e-4528-a928-5b2495aff972}</Project>
+      <Name>YRG_Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

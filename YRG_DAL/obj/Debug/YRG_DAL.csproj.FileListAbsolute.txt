@@ -1,0 +1,9 @@
+C:\Users\manyi\Desktop\Desktop\IVE(ST)_IT114105(SE)_Sem3_220258636_ManWY\ITP4915M_SDP\ITP4915M_project_grp6_YRG\YRG_DAL\bin\Debug\YRG_DAL.dll
+C:\Users\manyi\Desktop\Desktop\IVE(ST)_IT114105(SE)_Sem3_220258636_ManWY\ITP4915M_SDP\ITP4915M_project_grp6_YRG\YRG_DAL\bin\Debug\YRG_DAL.pdb
+C:\Users\manyi\Desktop\Desktop\IVE(ST)_IT114105(SE)_Sem3_220258636_ManWY\ITP4915M_SDP\ITP4915M_project_grp6_YRG\YRG_DAL\obj\Debug\YRG_DAL.csproj.AssemblyReference.cache
+C:\Users\manyi\Desktop\Desktop\IVE(ST)_IT114105(SE)_Sem3_220258636_ManWY\ITP4915M_SDP\ITP4915M_project_grp6_YRG\YRG_DAL\obj\Debug\YRG_DAL.csproj.CoreCompileInputs.cache
+C:\Users\manyi\Desktop\Desktop\IVE(ST)_IT114105(SE)_Sem3_220258636_ManWY\ITP4915M_SDP\ITP4915M_project_grp6_YRG\YRG_DAL\obj\Debug\YRG_DAL.dll
+C:\Users\manyi\Desktop\Desktop\IVE(ST)_IT114105(SE)_Sem3_220258636_ManWY\ITP4915M_SDP\ITP4915M_project_grp6_YRG\YRG_DAL\obj\Debug\YRG_DAL.pdb
+C:\Users\manyi\Desktop\Desktop\IVE(ST)_IT114105(SE)_Sem3_220258636_ManWY\ITP4915M_SDP\ITP4915M_project_grp6_YRG\YRG_DAL\bin\Debug\YRG_Model.dll
+C:\Users\manyi\Desktop\Desktop\IVE(ST)_IT114105(SE)_Sem3_220258636_ManWY\ITP4915M_SDP\ITP4915M_project_grp6_YRG\YRG_DAL\bin\Debug\YRG_Model.pdb
+C:\Users\manyi\Desktop\Desktop\IVE(ST)_IT114105(SE)_Sem3_220258636_ManWY\ITP4915M_SDP\ITP4915M_project_grp6_YRG\YRG_DAL\obj\Debug\YRG_DAL.csproj.CopyComplete

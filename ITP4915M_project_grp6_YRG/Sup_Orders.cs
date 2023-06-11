@@ -19,7 +19,7 @@ namespace ITP4915M_project_grp6_YRG
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            //asdf
+            
         }
     }
 }

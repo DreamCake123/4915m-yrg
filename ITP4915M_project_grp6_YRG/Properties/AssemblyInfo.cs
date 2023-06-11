@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ITP4915M_project_grp6_YRG")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("ITP4915M_YRG_Grp6")]
+[assembly: AssemblyDescription("Yummy Restaurant Group Centralized Procuremnt System (YRGCPS)")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ITP4915M_project_grp6_YRG")]
+[assembly: AssemblyCompany("Yummy Restaurant Group Limited (YRG Ltd.)")]
+[assembly: AssemblyProduct("Yummy Restaurant Group Centralized Procuremnt System (YRGCPS)")]
 [assembly: AssemblyCopyright("Copyright ©  2023")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

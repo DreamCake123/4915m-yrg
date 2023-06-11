@@ -12,6 +12,13 @@ namespace ITP4915M_project_grp6_YRG
 {
     public partial class formLogin : Form
     {
+        UserControl userControl = new UserControl();
+
+        private void formLogin_Load(object sender, EventArgs e)
+        {
+
+        }
+
         public formLogin()
         {
             InitializeComponent();
@@ -36,5 +43,6 @@ namespace ITP4915M_project_grp6_YRG
         {
 
         }
+
     }
 }

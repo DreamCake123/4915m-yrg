@@ -140,6 +140,7 @@
             this.Controls.Add(this.btnLogin);
             this.Name = "formLogin";
             this.Text = "Login - YRG_CPS";
+            this.Load += new System.EventHandler(this.formLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

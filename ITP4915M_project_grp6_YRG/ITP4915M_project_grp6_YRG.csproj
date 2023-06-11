@@ -122,8 +122,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\YRG_BLL\YRG_BLL.csproj">
-      <Project>{143a7368-62af-41a7-aeae-4485b2a49462}</Project>
+    <ProjectReference Include="..\YRG_BLL\YRG_BLL.csproj">
+      <Project>{9dd5ca2a-c960-4b49-9f26-4fa961f5231c}</Project>
       <Name>YRG_BLL</Name>
     </ProjectReference>
     <ProjectReference Include="..\YRG_Model\YRG_Model.csproj">

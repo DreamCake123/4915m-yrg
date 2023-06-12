@@ -7,20 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Krypton.Toolkit;
+using Krypton.Docking;
+using Krypton.Navigator;
+using Krypton.Workspace;
 using WeifenLuo.WinFormsUI.Docking;
 
 namespace ITP4915M_project_grp6_YRG
 {
-    public partial class FrmMenu : Form
+    public partial class FrmMenu : DockContent
     {
         public FrmMenu()
         {
             InitializeComponent();
-        }
-
-        internal void Show(DockPanel dockPanelMain, DockState dockLeft)
-        {
-            throw new NotImplementedException();
         }
     }
 }

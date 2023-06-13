@@ -4,3 +4,15 @@ C:\Users\manyi\Desktop\Desktop\IVE(ST)_IT114105(SE)_Sem3_220258636_ManWY\ITP4915
 C:\Users\manyi\Desktop\Desktop\IVE(ST)_IT114105(SE)_Sem3_220258636_ManWY\ITP4915M_SDP\ITP4915M_project_grp6_YRG\YRG_Model\obj\Debug\YRG_Model.csproj.CoreCompileInputs.cache
 C:\Users\manyi\Desktop\Desktop\IVE(ST)_IT114105(SE)_Sem3_220258636_ManWY\ITP4915M_SDP\ITP4915M_project_grp6_YRG\YRG_Model\obj\Debug\YRG_Model.dll
 C:\Users\manyi\Desktop\Desktop\IVE(ST)_IT114105(SE)_Sem3_220258636_ManWY\ITP4915M_SDP\ITP4915M_project_grp6_YRG\YRG_Model\obj\Debug\YRG_Model.pdb
+C:\Users\Cake\Documents\Code\4915m-yrg\4915M\YRG_Model\bin\Debug\YRG_Model.dll
+C:\Users\Cake\Documents\Code\4915m-yrg\4915M\YRG_Model\bin\Debug\YRG_Model.pdb
+C:\Users\Cake\Documents\Code\4915m-yrg\4915M\YRG_Model\obj\Debug\YRG_Model.csproj.AssemblyReference.cache
+C:\Users\Cake\Documents\Code\4915m-yrg\4915M\YRG_Model\obj\Debug\YRG_Model.csproj.CoreCompileInputs.cache
+C:\Users\Cake\Documents\Code\4915m-yrg\4915M\YRG_Model\obj\Debug\YRG_Model.dll
+C:\Users\Cake\Documents\Code\4915m-yrg\4915M\YRG_Model\obj\Debug\YRG_Model.pdb
+C:\Users\manyi\Desktop\Desktop\IVE(ST)_IT114105(SE)_Sem3_220258636_ManWY\ITP4915M_SDP\4915M\YRG_Model\bin\Debug\YRG_Model.dll
+C:\Users\manyi\Desktop\Desktop\IVE(ST)_IT114105(SE)_Sem3_220258636_ManWY\ITP4915M_SDP\4915M\YRG_Model\bin\Debug\YRG_Model.pdb
+C:\Users\manyi\Desktop\Desktop\IVE(ST)_IT114105(SE)_Sem3_220258636_ManWY\ITP4915M_SDP\4915M\YRG_Model\obj\Debug\YRG_Model.csproj.AssemblyReference.cache
+C:\Users\manyi\Desktop\Desktop\IVE(ST)_IT114105(SE)_Sem3_220258636_ManWY\ITP4915M_SDP\4915M\YRG_Model\obj\Debug\YRG_Model.csproj.CoreCompileInputs.cache
+C:\Users\manyi\Desktop\Desktop\IVE(ST)_IT114105(SE)_Sem3_220258636_ManWY\ITP4915M_SDP\4915M\YRG_Model\obj\Debug\YRG_Model.dll
+C:\Users\manyi\Desktop\Desktop\IVE(ST)_IT114105(SE)_Sem3_220258636_ManWY\ITP4915M_SDP\4915M\YRG_Model\obj\Debug\YRG_Model.pdb

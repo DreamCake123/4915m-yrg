@@ -1,6 +1,6 @@
-﻿namespace YRG_4915M.BasicInfo
+﻿namespace YRG_4915M.Pages.Report
 {
-    partial class FrmTable4
+    partial class ReportFrmTable3
     {
         /// <summary>
         /// Required designer variable.
@@ -30,13 +30,14 @@
         {
             this.SuspendLayout();
             // 
-            // FrmTable4
+            // ReportFrmTable3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1608, 1054);
-            this.Name = "FrmTable4";
-            this.Text = "FrmTable4";
+            this.AutoScroll = true;
+            this.ClientSize = new System.Drawing.Size(1898, 1424);
+            this.Name = "ReportFrmTable3";
+            this.Text = "YRGCPS Report Table3";
             this.ResumeLayout(false);
 
         }

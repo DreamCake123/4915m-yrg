@@ -1,6 +1,6 @@
-﻿namespace YRG_4915M.BasicInfo
+﻿namespace YRG_4915M.Pages.OrderManagement
 {
-    partial class FrmMinor
+    partial class OrderFrmIssueDeliveryNote
     {
         /// <summary>
         /// Required designer variable.
@@ -30,13 +30,14 @@
         {
             this.SuspendLayout();
             // 
-            // FrmMinor
+            // OrderFrmIssueDeliveryNote
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1608, 1054);
-            this.Name = "FrmMinor";
-            this.Text = "FrmMinor";
+            this.AutoScroll = true;
+            this.ClientSize = new System.Drawing.Size(1898, 1424);
+            this.Name = "OrderFrmIssueDeliveryNote";
+            this.Text = "OrderFrmIssueDeliveryNote";
             this.ResumeLayout(false);
 
         }

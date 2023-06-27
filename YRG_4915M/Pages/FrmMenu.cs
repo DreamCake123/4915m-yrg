@@ -33,73 +33,44 @@ namespace YRG_4915M
                     return;
                 }
             }
-<<<<<<< HEAD
             dock.Text = label.Text;
-=======
-            // dock.Text = label.Text;
->>>>>>> e186b4bd104961d8d8194ae2f665f8d61c2932bb
             dock.Show(FrmMain.FrmMain1.dockPanelMain);
         }
 
 
 
         // Basic Information
-<<<<<<< HEAD
         private void lblBasicInfoStaff_Click(object sender, EventArgs e)
         {
             Pages.BasicInfo.BasicFrmStaff frm = new Pages.BasicInfo.BasicFrmStaff();
-=======
-        private void lblBasicInfoMajor_Click(object sender, EventArgs e)
-        {
-            Pages.BasicInfo.BasicFrmMajor frm = new Pages.BasicInfo.BasicFrmMajor();
->>>>>>> e186b4bd104961d8d8194ae2f665f8d61c2932bb
             var lbl = sender as KryptonLabel;
 
             OpenSubFrom(frm, lbl);
         }
 
-<<<<<<< HEAD
         private void lblBasicInfoSupplier_Click(object sender, EventArgs e)
         {
             Pages.BasicInfo.BasicFrmSupplier frm = new Pages.BasicInfo.BasicFrmSupplier();
-=======
-        private void lblBasicInfoMinor_Click(object sender, EventArgs e)
-        {
-            Pages.BasicInfo.BasicFrmMinor frm = new Pages.BasicInfo.BasicFrmMinor();
->>>>>>> e186b4bd104961d8d8194ae2f665f8d61c2932bb
             var lbl = sender as KryptonLabel;
 
             OpenSubFrom(frm, lbl);
         }
 
-<<<<<<< HEAD
         private void lblBasicInfoRestaurant_Click(object sender, EventArgs e)
         {
             Pages.BasicInfo.BasicFrmRestaurant frm = new Pages.BasicInfo.BasicFrmRestaurant();
-=======
-        private void lblBasicInfoTable3_Click(object sender, EventArgs e)
-        {
-            Pages.BasicInfo.BasicFrmTable3 frm = new Pages.BasicInfo.BasicFrmTable3();
->>>>>>> e186b4bd104961d8d8194ae2f665f8d61c2932bb
             var lbl = sender as KryptonLabel;
 
             OpenSubFrom(frm, lbl);
         }
 
-<<<<<<< HEAD
         private void lblBasicInfoWarehouse_Click(object sender, EventArgs e)
         {
             Pages.BasicInfo.BasicFrmWarehouse frm = new Pages.BasicInfo.BasicFrmWarehouse();
-=======
-        private void lblBasicInfoTable4_Click(object sender, EventArgs e)
-        {
-            Pages.BasicInfo.BasicFrmTable4 frm = new Pages.BasicInfo.BasicFrmTable4();
->>>>>>> e186b4bd104961d8d8194ae2f665f8d61c2932bb
             var lbl = sender as KryptonLabel;
 
             OpenSubFrom(frm, lbl);
         }
-<<<<<<< HEAD
         private void lblBasicInfoYourAccount_Click(object sender, EventArgs e)
         {
             
@@ -109,35 +80,20 @@ namespace YRG_4915M
         private void lblRequestRM_Click(object sender, EventArgs e)
         {
             Pages.RequestManagement.RequestFrmRestaurantManager frm = new Pages.RequestManagement.RequestFrmRestaurantManager();
-=======
-
-
-        // Request Management
-        private void lblRequestMajor_Click(object sender, EventArgs e)
-        {
-            Pages.RequestManagement.RequestFrmMajor frm = new Pages.RequestManagement.RequestFrmMajor();
->>>>>>> e186b4bd104961d8d8194ae2f665f8d61c2932bb
             var lbl = sender as KryptonLabel;
 
             OpenSubFrom(frm, lbl);
         }
 
-<<<<<<< HEAD
         private void lblRequestPM_Click(object sender, EventArgs e)
         {
             Pages.RequestManagement.RequestFrmPurchaseManager frm = new Pages.RequestManagement.RequestFrmPurchaseManager();
-=======
-        private void lblRequestMinor_Click(object sender, EventArgs e)
-        {
-            Pages.RequestManagement.RequestFrmMinor frm = new Pages.RequestManagement.RequestFrmMinor();
->>>>>>> e186b4bd104961d8d8194ae2f665f8d61c2932bb
             var lbl = sender as KryptonLabel;
 
             OpenSubFrom(frm, lbl);
         }
 
         private void lblRequestTable3_Click(object sender, EventArgs e)
-<<<<<<< HEAD
         { }
 
 
@@ -145,34 +101,14 @@ namespace YRG_4915M
         private void lblWarehouseStockCount_Click(object sender, EventArgs e)
         {
             Pages.StockManagement.StockFrmWarehouse frm = new Pages.StockManagement.StockFrmWarehouse();
-=======
-        {
-            Pages.RequestManagement.RequestFrmTable3 frm = new Pages.RequestManagement.RequestFrmTable3();
->>>>>>> e186b4bd104961d8d8194ae2f665f8d61c2932bb
             var lbl = sender as KryptonLabel;
 
             OpenSubFrom(frm, lbl);
         }
 
-<<<<<<< HEAD
         private void lblRestaurantStockCount_Click(object sender, EventArgs e)
         {
             Pages.StockManagement.StockFrmRestaurant frm = new Pages.StockManagement.StockFrmRestaurant();
-=======
-
-        //Stock Management
-        private void lblWarehouseStock_Click(object sender, EventArgs e)
-        {
-            Pages.StockManagement.StockFrmMajor frm = new Pages.StockManagement.StockFrmMajor();
-            var lbl = sender as KryptonLabel;
-
-            OpenSubFrom(frm, lbl);
-        }
-
-        private void lblRestaurantStock_Click(object sender, EventArgs e)
-        {
-            Pages.StockManagement.StockFrmMinor frm = new Pages.StockManagement.StockFrmMinor();
->>>>>>> e186b4bd104961d8d8194ae2f665f8d61c2932bb
             var lbl = sender as KryptonLabel;
 
             OpenSubFrom(frm, lbl);
@@ -188,15 +124,9 @@ namespace YRG_4915M
             OpenSubFrom(frm, lbl);
         }
 
-<<<<<<< HEAD
         private void lblItemItems_Click(object sender, EventArgs e)
         {
             Pages.ItemManagement.ItemFrmItems frm = new Pages.ItemManagement.ItemFrmItems();
-=======
-        private void lblItemMinor_Click(object sender, EventArgs e)
-        {
-            Pages.ItemManagement.ItemFrmMinor frm = new Pages.ItemManagement.ItemFrmMinor();
->>>>>>> e186b4bd104961d8d8194ae2f665f8d61c2932bb
             var lbl = sender as KryptonLabel;
 
             OpenSubFrom(frm, lbl);
@@ -204,29 +134,17 @@ namespace YRG_4915M
 
 
         // Agreement Management
-<<<<<<< HEAD
         private void lblAgreementView_Click(object sender, EventArgs e)
         {
             Pages.AgreementManagement.AgreeFrmView frm = new Pages.AgreementManagement.AgreeFrmView();
-=======
-        private void lblAgreeMajor_Click(object sender, EventArgs e)
-        {
-            Pages.AgreementManagement.AgreeFrmMajor frm = new Pages.AgreementManagement.AgreeFrmMajor();
->>>>>>> e186b4bd104961d8d8194ae2f665f8d61c2932bb
             var lbl = sender as KryptonLabel;
 
             OpenSubFrom(frm, lbl);
         }
 
-<<<<<<< HEAD
         private void lblAgreementBPA_Click(object sender, EventArgs e)
         {
             Pages.AgreementManagement.AgreeFrmBPA frm = new Pages.AgreementManagement.AgreeFrmBPA();
-=======
-        private void lblAgreeMinor_Click(object sender, EventArgs e)
-        {
-            Pages.AgreementManagement.AgreeFrmMinor frm = new Pages.AgreementManagement.AgreeFrmMinor();
->>>>>>> e186b4bd104961d8d8194ae2f665f8d61c2932bb
             var lbl = sender as KryptonLabel;
 
             OpenSubFrom(frm, lbl);
@@ -234,18 +152,13 @@ namespace YRG_4915M
 
         private void lblAgreeTable3_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
             Pages.AgreementManagement.AgreeFrmCPA frm = new Pages.AgreementManagement.AgreeFrmCPA();
-=======
-            Pages.AgreementManagement.AgreeFrmTable3 frm = new Pages.AgreementManagement.AgreeFrmTable3();
->>>>>>> e186b4bd104961d8d8194ae2f665f8d61c2932bb
             var lbl = sender as KryptonLabel;
 
             OpenSubFrom(frm, lbl);
         }
 
 
-<<<<<<< HEAD
         //Order Management
         private void lblPurchaseManager_Click(object sender, EventArgs e)
         {
@@ -278,8 +191,6 @@ namespace YRG_4915M
             OpenSubFrom(frm, lbl);
         }
 
-=======
->>>>>>> e186b4bd104961d8d8194ae2f665f8d61c2932bb
 
         // Report
         private void lblReportMajor_Click(object sender, EventArgs e)
@@ -305,10 +216,7 @@ namespace YRG_4915M
 
             OpenSubFrom(frm, lbl);
         }
-<<<<<<< HEAD
 
         
-=======
->>>>>>> e186b4bd104961d8d8194ae2f665f8d61c2932bb
     }
 }

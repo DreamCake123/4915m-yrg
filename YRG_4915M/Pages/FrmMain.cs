@@ -17,9 +17,12 @@ namespace YRG_4915M
 {
     public partial class FrmMain : Form
     {
+        public static FrmMain FrmMain1;
+
         public FrmMain()
         {
             InitializeComponent();
+            FrmMain1 = this;
         }
 
         private void FrmMain_Load(object sender, EventArgs e)
@@ -30,6 +33,31 @@ namespace YRG_4915M
             FrmMenu frmMenu = new FrmMenu();
             frmMenu.Show(dockPanelMain,DockState.DockLeft);
             dockPanelMain.DockLeftPortion = 165;
+        }
+
+        public void OpenSubFrom(DockContent dock)
+        {
+            foreach (DockContent item in FrmMain.FrmMain1.dockPanelMain.Contents)
+            {
+                if (item.Name.Equals(dock.Name))
+                {
+                    item.Activate();
+                    return;
+                }
+            }
+            dock.Show(FrmMain.FrmMain1.dockPanelMain);
+        }
+
+        private void toolStripMenuItemAccount_Click(object sender, EventArgs e)
+        {
+            Pages.FrmAccount frm = new Pages.FrmAccount();
+
+            OpenSubFrom(frm);
+        }
+
+        private void toolStripMenuItemLogout_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.Exit();
         }
     }
 }

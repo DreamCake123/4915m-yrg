@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLogin));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.lblForgotPswd = new System.Windows.Forms.Label();
             this.lblUserID = new System.Windows.Forms.Label();
@@ -36,9 +37,11 @@
             this.txtUserID = new System.Windows.Forms.TextBox();
             this.txtPswd = new System.Windows.Forms.TextBox();
             this.btnCancelLogin = new System.Windows.Forms.Button();
-            this.lblYRG = new System.Windows.Forms.Label();
+            this.kryptonTableLayoutPanel1 = new Krypton.Toolkit.KryptonTableLayoutPanel();
             this.lblCPS = new System.Windows.Forms.Label();
+            this.lblYRG = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
+            this.kryptonTableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -144,41 +147,69 @@
             this.btnCancelLogin.UseVisualStyleBackColor = true;
             this.btnCancelLogin.Click += new System.EventHandler(this.btnCancelLogin_Click);
             // 
-            // lblYRG
+            // kryptonTableLayoutPanel1
             // 
-            this.lblYRG.AutoSize = true;
-            this.lblYRG.Font = new System.Drawing.Font("Garamond", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblYRG.Location = new System.Drawing.Point(188, 51);
-            this.lblYRG.Name = "lblYRG";
-            this.lblYRG.Size = new System.Drawing.Size(607, 59);
-            this.lblYRG.TabIndex = 13;
-            this.lblYRG.Text = "Yummy Restaurant Group";
+            this.kryptonTableLayoutPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("kryptonTableLayoutPanel1.BackgroundImage")));
+            this.kryptonTableLayoutPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.kryptonTableLayoutPanel1.ColumnCount = 3;
+            this.kryptonTableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.kryptonTableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.kryptonTableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.kryptonTableLayoutPanel1.Controls.Add(this.lblYRG, 1, 1);
+            this.kryptonTableLayoutPanel1.Controls.Add(this.lblCPS, 1, 2);
+            this.kryptonTableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.kryptonTableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.kryptonTableLayoutPanel1.Name = "kryptonTableLayoutPanel1";
+            this.kryptonTableLayoutPanel1.RowCount = 4;
+            this.kryptonTableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.kryptonTableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.kryptonTableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.kryptonTableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.kryptonTableLayoutPanel1.Size = new System.Drawing.Size(978, 188);
+            this.kryptonTableLayoutPanel1.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.kryptonTableLayoutPanel1.StateCommon.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.kryptonTableLayoutPanel1.TabIndex = 7;
             // 
             // lblCPS
             // 
+            this.lblCPS.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.lblCPS.AutoSize = true;
             this.lblCPS.Font = new System.Drawing.Font("Garamond", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCPS.Location = new System.Drawing.Point(202, 135);
+            this.lblCPS.Location = new System.Drawing.Point(199, 98);
             this.lblCPS.Name = "lblCPS";
             this.lblCPS.Size = new System.Drawing.Size(579, 50);
-            this.lblCPS.TabIndex = 14;
+            this.lblCPS.TabIndex = 16;
             this.lblCPS.Text = "Centralized Procurement System";
+            this.lblCPS.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // lblYRG
+            // 
+            this.lblYRG.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.lblYRG.AutoSize = true;
+            this.lblYRG.Font = new System.Drawing.Font("Garamond", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblYRG.Location = new System.Drawing.Point(185, 39);
+            this.lblYRG.Name = "lblYRG";
+            this.lblYRG.Size = new System.Drawing.Size(607, 59);
+            this.lblYRG.TabIndex = 15;
+            this.lblYRG.Text = "Yummy Restaurant Group";
+            this.lblYRG.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(978, 624);
-            this.Controls.Add(this.lblCPS);
+            this.Controls.Add(this.kryptonTableLayoutPanel1);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Controls.Add(this.lblYRG);
             this.Name = "FrmLogin";
             this.Text = "Login - YRGCPS";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            this.kryptonTableLayoutPanel1.ResumeLayout(false);
+            this.kryptonTableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -191,8 +222,9 @@
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Label lblPswd;
         private System.Windows.Forms.TextBox txtPswd;
+        private System.Windows.Forms.Label lblForgotPswd;
+        private Krypton.Toolkit.KryptonTableLayoutPanel kryptonTableLayoutPanel1;
         private System.Windows.Forms.Label lblYRG;
         private System.Windows.Forms.Label lblCPS;
-        private System.Windows.Forms.Label lblForgotPswd;
     }
 }

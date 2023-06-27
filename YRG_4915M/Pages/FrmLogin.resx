@@ -117,37 +117,30 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="tableLayoutPanel1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="lblForgotPswd.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="lblUserID.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="lblPswd.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="btnLogin.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="txtUserID.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="txtPswd.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="btnCancelLogin.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="lblYRG.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="lblCPS.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="kryptonTableLayoutPanel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAA9IAAAC8CAYAAACUhZZpAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAARVSURBVHhe7dcxEQAwCACx+leFM2qB33NRkTcLAAAAXIk0
+        AAAABCINAAAAgUgDAABAINIAAAAQiDQAAAAEIg0AAACBSAMAAEAg0gAAABCINAAAAAQiDQAAAIFIAwAA
+        QCDSAAAAEIg0AAAABCINAAAAgUgDAABAINIAAAAQiDQAAAAEIg0AAACBSAMAAEAg0gAAABCINAAAAAQi
+        DQAAAIFIAwAAQCDSAAAAEIg0AAAABCINAAAAgUgDAABAINIAAAAQiDQAAAAEIg0AAACBSAMAAEAg0gAA
+        ABCINAAAAAQiDQAAAIFIAwAAQCDSAAAAEIg0AAAABCINAAAAgUgDAABAINIAAAAQiDQAAAAEIg0AAACB
+        SAMAAEAg0gAAABCINAAAAAQiDQAAAIFIAwAAQCDSAAAAEIg0AAAABCINAAAAgUgDAABAINIAAAAQiDQA
+        AAAEIg0AAACBSAMAAEAg0gAAABCINAAAAAQiDQAAAIFIAwAAQCDSAAAAEIg0AAAABCINAAAAgUgDAABA
+        INIAAAAQiDQAAAAEIg0AAACBSAMAAEAg0gAAABCINAAAAAQiDQAAAIFIAwAAQCDSAAAAEIg0AAAABCIN
+        AAAAgUgDAABAINIAAAAQiDQAAAAEIg0AAACBSAMAAEAg0gAAABCINAAAAAQiDQAAAIFIAwAAQCDSAAAA
+        EIg0AAAABCINAAAAgUgDAABAINIAAAAQiDQAAAAEIg0AAACBSAMAAEAg0gAAABCINAAAAAQiDQAAAIFI
+        AwAAQCDSAAAAEIg0AAAABCINAAAAgUgDAABAINIAAAAQiDQAAAAEIg0AAACBSAMAAEAg0gAAABCINAAA
+        AAQiDQAAAIFIAwAAQCDSAAAAEIg0AAAABCINAAAAgUgDAABAINIAAAAQiDQAAAAEIg0AAACBSAMAAEAg
+        0gAAABCINAAAAAQiDQAAAIFIAwAAQCDSAAAAEIg0AAAABCINAAAAgUgDAABAINIAAAAQiDQAAAAEIg0A
+        AACBSAMAAEAg0gAAABCINAAAAAQiDQAAAIFIAwAAQCDSAAAAEIg0AAAABCINAAAAgUgDAABAINIAAAAQ
+        iDQAAAAEIg0AAACBSAMAAEAg0gAAABCINAAAAAQiDQAAAIFIAwAAQCDSAAAAEIg0AAAABCINAAAAgUgD
+        AABAINIAAAAQiDQAAAAEIg0AAACBSAMAAEAg0gAAABCINAAAAAQiDQAAAIFIAwAAQCDSAAAAEIg0AAAA
+        BCINAAAAgUgDAABAINIAAAAQiDQAAAAEIg0AAACBSAMAAEAg0gAAABCINAAAAAQiDQAAAIFIAwAAQCDS
+        AAAAEIg0AAAABCINAAAAgUgDAABAINIAAAAQiDQAAAAEIg0AAACBSAMAAEAg0gAAABCINAAAAAQiDQAA
+        AIFIAwAAQCDSAAAAEIg0AAAABCINAAAAgUgDAABAINIAAAAQiDQAAAAEIg0AAACBSAMAAMDZ7AdQQrqF
+        zAUddgAAAABJRU5ErkJggg==
+</value>
+  </data>
 </root>

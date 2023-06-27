@@ -27,7 +27,11 @@ namespace YRG_4915M
 
         private void btnCancelLogin_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             txtUserID.Text = string.Empty;
+=======
+            txtUserId.Text = string.Empty;
+>>>>>>> e186b4bd104961d8d8194ae2f665f8d61c2932bb
             txtUserEmail.Text = string.Empty;
         }
 

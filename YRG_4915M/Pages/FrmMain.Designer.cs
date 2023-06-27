@@ -52,7 +52,11 @@
             this.dockPanelMain.Name = "dockPanelMain";
             this.dockPanelMain.Padding = new System.Windows.Forms.Padding(6);
             this.dockPanelMain.ShowAutoHideContentOnHover = false;
+<<<<<<< HEAD
             this.dockPanelMain.Size = new System.Drawing.Size(1898, 1370);
+=======
+            this.dockPanelMain.Size = new System.Drawing.Size(1898, 1424);
+>>>>>>> e186b4bd104961d8d8194ae2f665f8d61c2932bb
             this.dockPanelMain.TabIndex = 1;
             this.dockPanelMain.Theme = this.vS2015BlueTheme1;
             // 
@@ -168,8 +172,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(1898, 1370);
             this.Controls.Add(this.toolStrip1);
+=======
+            this.ClientSize = new System.Drawing.Size(1898, 1424);
+>>>>>>> e186b4bd104961d8d8194ae2f665f8d61c2932bb
             this.Controls.Add(this.dockPanelMain);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.IsMdiContainer = true;
@@ -186,6 +194,7 @@
         #endregion
         private WeifenLuo.WinFormsUI.Docking.VS2015BlueTheme vS2015BlueTheme1;
         public WeifenLuo.WinFormsUI.Docking.DockPanel dockPanelMain;
+<<<<<<< HEAD
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripLabel tsLblUserID;
         private System.Windows.Forms.ToolStripDropDownButton tsDropDownBtnAccount;
@@ -196,5 +205,7 @@
         private System.Windows.Forms.ToolStripSeparator tsSeparator2;
         private System.Windows.Forms.ToolStripLabel tsLblVersion;
         private System.Windows.Forms.ToolStripSeparator tsSeparator3;
+=======
+>>>>>>> e186b4bd104961d8d8194ae2f665f8d61c2932bb
     }
 }

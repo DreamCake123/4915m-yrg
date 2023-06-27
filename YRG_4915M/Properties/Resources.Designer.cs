@@ -243,6 +243,7 @@ namespace YRG_4915M.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+<<<<<<< HEAD
         internal static System.Drawing.Bitmap cog1 {
             get {
                 object obj = ResourceManager.GetObject("cog1", resourceCulture);
@@ -253,6 +254,8 @@ namespace YRG_4915M.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+=======
+>>>>>>> e186b4bd104961d8d8194ae2f665f8d61c2932bb
         internal static System.Drawing.Bitmap cross {
             get {
                 object obj = ResourceManager.GetObject("cross", resourceCulture);

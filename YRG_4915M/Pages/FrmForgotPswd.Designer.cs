@@ -30,9 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmForgotPswd));
             this.lblYRG = new System.Windows.Forms.Label();
+<<<<<<< HEAD
             this.btnCancel = new System.Windows.Forms.Button();
             this.txtUserEmail = new System.Windows.Forms.TextBox();
             this.txtUserID = new System.Windows.Forms.TextBox();
+=======
+            this.btnCancelLogin = new System.Windows.Forms.Button();
+            this.txtUserEmail = new System.Windows.Forms.TextBox();
+            this.txtUserId = new System.Windows.Forms.TextBox();
+>>>>>>> e186b4bd104961d8d8194ae2f665f8d61c2932bb
             this.btnEnter = new System.Windows.Forms.Button();
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblUserID = new System.Windows.Forms.Label();
@@ -61,6 +67,7 @@
             // 
             // btnCancel
             // 
+<<<<<<< HEAD
             this.btnCancel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnCancel.Font = new System.Drawing.Font("Garamond", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.Location = new System.Drawing.Point(568, 218);
@@ -70,30 +77,58 @@
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancelLogin_Click);
+=======
+            this.btnCancelLogin.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnCancelLogin.Font = new System.Drawing.Font("Garamond", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelLogin.Location = new System.Drawing.Point(571, 238);
+            this.btnCancelLogin.Name = "btnCancelLogin";
+            this.btnCancelLogin.Size = new System.Drawing.Size(135, 46);
+            this.btnCancelLogin.TabIndex = 7;
+            this.btnCancelLogin.Text = "Cancel";
+            this.btnCancelLogin.UseVisualStyleBackColor = true;
+            this.btnCancelLogin.Click += new System.EventHandler(this.btnCancelLogin_Click);
+>>>>>>> e186b4bd104961d8d8194ae2f665f8d61c2932bb
             // 
             // txtUserEmail
             // 
             this.txtUserEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtUserEmail.Font = new System.Drawing.Font("Garamond", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.txtUserEmail.Location = new System.Drawing.Point(506, 141);
+=======
+            this.txtUserEmail.Location = new System.Drawing.Point(509, 161);
+>>>>>>> e186b4bd104961d8d8194ae2f665f8d61c2932bb
             this.txtUserEmail.Name = "txtUserEmail";
             this.txtUserEmail.Size = new System.Drawing.Size(259, 39);
             this.txtUserEmail.TabIndex = 12;
             // 
-            // txtUserID
+            // txtUserId
             // 
+<<<<<<< HEAD
             this.txtUserID.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtUserID.Font = new System.Drawing.Font("Garamond", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUserID.Location = new System.Drawing.Point(506, 61);
             this.txtUserID.Name = "txtUserID";
             this.txtUserID.Size = new System.Drawing.Size(259, 39);
             this.txtUserID.TabIndex = 9;
+=======
+            this.txtUserId.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtUserId.Font = new System.Drawing.Font("Garamond", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUserId.Location = new System.Drawing.Point(509, 81);
+            this.txtUserId.Name = "txtUserId";
+            this.txtUserId.Size = new System.Drawing.Size(259, 39);
+            this.txtUserId.TabIndex = 9;
+>>>>>>> e186b4bd104961d8d8194ae2f665f8d61c2932bb
             // 
             // btnEnter
             // 
             this.btnEnter.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnEnter.Font = new System.Drawing.Font("Garamond", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.btnEnter.Location = new System.Drawing.Point(265, 217);
+=======
+            this.btnEnter.Location = new System.Drawing.Point(268, 237);
+>>>>>>> e186b4bd104961d8d8194ae2f665f8d61c2932bb
             this.btnEnter.Name = "btnEnter";
             this.btnEnter.Size = new System.Drawing.Size(141, 48);
             this.btnEnter.TabIndex = 6;
@@ -133,9 +168,15 @@
             this.tableLayoutPanel1.Controls.Add(this.lblUserID, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.lblEmail, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.btnEnter, 1, 3);
+<<<<<<< HEAD
             this.tableLayoutPanel1.Controls.Add(this.txtUserID, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.txtUserEmail, 2, 2);
             this.tableLayoutPanel1.Controls.Add(this.btnCancel, 2, 3);
+=======
+            this.tableLayoutPanel1.Controls.Add(this.txtUserId, 2, 1);
+            this.tableLayoutPanel1.Controls.Add(this.txtUserEmail, 2, 2);
+            this.tableLayoutPanel1.Controls.Add(this.btnCancelLogin, 2, 3);
+>>>>>>> e186b4bd104961d8d8194ae2f665f8d61c2932bb
             this.tableLayoutPanel1.Controls.Add(this.lblBack, 0, 4);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 263);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -166,9 +207,13 @@
             this.lblMsg.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.lblMsg.AutoSize = true;
             this.lblMsg.Font = new System.Drawing.Font("Garamond", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.lblMsg.Location = new System.Drawing.Point(241, 6);
+=======
+            this.lblMsg.Location = new System.Drawing.Point(392, 37);
+>>>>>>> e186b4bd104961d8d8194ae2f665f8d61c2932bb
             this.lblMsg.Name = "lblMsg";
-            this.lblMsg.Size = new System.Drawing.Size(490, 31);
+            this.lblMsg.Size = new System.Drawing.Size(167, 38);
             this.lblMsg.TabIndex = 13;
             this.lblMsg.Text = "Please enter your User ID and Email below.";
             this.lblMsg.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -270,9 +315,15 @@
 
         #endregion
         private System.Windows.Forms.Label lblYRG;
+<<<<<<< HEAD
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.TextBox txtUserEmail;
         private System.Windows.Forms.TextBox txtUserID;
+=======
+        private System.Windows.Forms.Button btnCancelLogin;
+        private System.Windows.Forms.TextBox txtUserEmail;
+        private System.Windows.Forms.TextBox txtUserId;
+>>>>>>> e186b4bd104961d8d8194ae2f665f8d61c2932bb
         private System.Windows.Forms.Button btnEnter;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label lblUserID;

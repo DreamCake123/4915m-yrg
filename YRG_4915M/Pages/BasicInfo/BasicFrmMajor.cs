@@ -17,11 +17,11 @@ using System.Data.Common;
 using System.Collections.ObjectModel;
 using System.Windows.Forms.VisualStyles;
 
-namespace YRG_4915M.BasicInfo
+namespace YRG_4915M.Pages.BasicInfo
 {
-    public partial class FrmTable3 : DockContent
+    public partial class BasicFrmMajor : DockContent
     {
-        public FrmTable3()
+        public BasicFrmMajor()
         {
             InitializeComponent();
         }

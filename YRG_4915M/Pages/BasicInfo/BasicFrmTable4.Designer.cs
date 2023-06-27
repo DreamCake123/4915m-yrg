@@ -1,6 +1,6 @@
-﻿namespace YRG_4915M.BasicInfo
+﻿namespace YRG_4915M.Pages.BasicInfo
 {
-    partial class FrmTable3
+    partial class BasicFrmTable4
     {
         /// <summary>
         /// Required designer variable.
@@ -30,13 +30,13 @@
         {
             this.SuspendLayout();
             // 
-            // FrmTable3
+            // BasicFrmTable4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1608, 1054);
-            this.Name = "FrmTable3";
-            this.Text = "FrmTable3";
+            this.ClientSize = new System.Drawing.Size(1898, 1424);
+            this.Name = "BasicFrmTable4";
+            this.Text = "BasicFrmTable4";
             this.ResumeLayout(false);
 
         }

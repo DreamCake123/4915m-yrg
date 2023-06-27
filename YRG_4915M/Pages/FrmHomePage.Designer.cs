@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.orderBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnInsertItem = new Krypton.Toolkit.KryptonButton();
             this.btnInsertRequest = new Krypton.Toolkit.KryptonButton();
             this.tbItemName = new Krypton.Toolkit.KryptonTextBox();
@@ -38,22 +37,12 @@
             this.tbRequestStatus = new Krypton.Toolkit.KryptonTextBox();
             this.tbRequestNumber = new Krypton.Toolkit.KryptonTextBox();
             this.tbPkId = new Krypton.Toolkit.KryptonTextBox();
-            this.dataDisplayView = new System.Windows.Forms.ListView();
             this.HeaderText = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.DataField = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.ItemStyle = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.dataDisplayView = new System.Windows.Forms.ListView();
             ((System.ComponentModel.ISupportInitialize)(this.orderBindingSource)).BeginInit();
             this.SuspendLayout();
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(36, 513);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(881, 124);
-            this.textBox1.TabIndex = 0;
             // 
             // btnInsertItem
             // 
@@ -63,7 +52,6 @@
             this.btnInsertItem.Size = new System.Drawing.Size(200, 30);
             this.btnInsertItem.TabIndex = 1;
             this.btnInsertItem.Values.Text = "Insert New Item";
-            this.btnInsertItem.Click += new System.EventHandler(this.btnNewItem_Click);
             // 
             // btnInsertRequest
             // 
@@ -73,7 +61,6 @@
             this.btnInsertRequest.Size = new System.Drawing.Size(200, 30);
             this.btnInsertRequest.TabIndex = 2;
             this.btnInsertRequest.Values.Text = "Insert New Request";
-            this.btnInsertRequest.Click += new System.EventHandler(this.btnInsertRequest_Click);
             // 
             // tbItemName
             // 
@@ -132,7 +119,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1608, 1054);
+            this.ClientSize = new System.Drawing.Size(1898, 1424);
             this.CloseButton = false;
             this.CloseButtonVisible = false;
             this.Controls.Add(this.dataDisplayView);
@@ -143,7 +130,6 @@
             this.Controls.Add(this.tbItemName);
             this.Controls.Add(this.btnInsertRequest);
             this.Controls.Add(this.btnInsertItem);
-            this.Controls.Add(this.textBox1);
             this.DockAreas = ((WeifenLuo.WinFormsUI.Docking.DockAreas)(((((WeifenLuo.WinFormsUI.Docking.DockAreas.DockLeft | WeifenLuo.WinFormsUI.Docking.DockAreas.DockRight) 
             | WeifenLuo.WinFormsUI.Docking.DockAreas.DockTop) 
             | WeifenLuo.WinFormsUI.Docking.DockAreas.DockBottom) 
@@ -152,6 +138,7 @@
             this.Name = "FrmHomePage";
             this.ShowHint = WeifenLuo.WinFormsUI.Docking.DockState.Document;
             this.Text = "Home Page";
+            ((System.ComponentModel.ISupportInitialize)(this.orderBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -160,7 +147,6 @@
         #endregion
 
         private System.Windows.Forms.BindingSource orderBindingSource;
-        private System.Windows.Forms.TextBox textBox1;
         private Krypton.Toolkit.KryptonButton btnInsertItem;
         private Krypton.Toolkit.KryptonButton btnInsertRequest;
         private Krypton.Toolkit.KryptonTextBox tbItemName;
@@ -168,9 +154,9 @@
         private Krypton.Toolkit.KryptonTextBox tbRequestStatus;
         private Krypton.Toolkit.KryptonTextBox tbRequestNumber;
         private Krypton.Toolkit.KryptonTextBox tbPkId;
-        private System.Windows.Forms.ListView dataDisplayView;
         private System.Windows.Forms.ColumnHeader HeaderText;
         private System.Windows.Forms.ColumnHeader DataField;
         private System.Windows.Forms.ColumnHeader ItemStyle;
+        private System.Windows.Forms.ListView dataDisplayView;
     }
 }

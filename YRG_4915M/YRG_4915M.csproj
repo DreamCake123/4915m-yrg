@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -64,7 +64,9 @@
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
@@ -88,29 +90,86 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Pages\BasicInfo\FrmMajor.cs">
+    <Compile Include="Database\DatabaseAdapter.cs" />
+    <Compile Include="dbDataSet.cs">
+      <DependentUpon>dbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AgreementManagement\AgreeFrmCreateCPA.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Pages\BasicInfo\FrmMajor.Designer.cs">
-      <DependentUpon>FrmMajor.cs</DependentUpon>
+    <Compile Include="Pages\AgreementManagement\AgreeFrmCreateCPA.Designer.cs">
+      <DependentUpon>AgreeFrmCreateCPA.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pages\BasicInfo\FrmMinor.cs">
+    <Compile Include="Pages\AgreementManagement\AgreeFrmCreateBPA.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Pages\BasicInfo\FrmMinor.Designer.cs">
-      <DependentUpon>FrmMinor.cs</DependentUpon>
+    <Compile Include="Pages\AgreementManagement\AgreeFrmCreateBPA.Designer.cs">
+      <DependentUpon>AgreeFrmCreateBPA.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pages\BasicInfo\FrmTable3.cs">
+    <Compile Include="Pages\AgreementManagement\AgreeFrmEditBPA.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Pages\BasicInfo\FrmTable3.Designer.cs">
-      <DependentUpon>FrmTable3.cs</DependentUpon>
+    <Compile Include="Pages\AgreementManagement\AgreeFrmEditBPA.Designer.cs">
+      <DependentUpon>AgreeFrmEditBPA.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pages\BasicInfo\FrmTable4.cs">
+    <Compile Include="Pages\AgreementManagement\AgreeFrmEditCPA.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Pages\BasicInfo\FrmTable4.Designer.cs">
-      <DependentUpon>FrmTable4.cs</DependentUpon>
+    <Compile Include="Pages\AgreementManagement\AgreeFrmEditCPA.Designer.cs">
+      <DependentUpon>AgreeFrmEditCPA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AgreementManagement\AgreeFrmMajor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\AgreementManagement\AgreeFrmMajor.Designer.cs">
+      <DependentUpon>AgreeFrmMajor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AgreementManagement\AgreeFrmMinor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\AgreementManagement\AgreeFrmMinor.Designer.cs">
+      <DependentUpon>AgreeFrmMinor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AgreementManagement\AgreeFrmTable3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\AgreementManagement\AgreeFrmTable3.Designer.cs">
+      <DependentUpon>AgreeFrmTable3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\BasicInfo\BasicFrmMajor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\BasicInfo\BasicFrmMajor.Designer.cs">
+      <DependentUpon>BasicFrmMajor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\BasicInfo\BasicFrmTable4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\BasicInfo\BasicFrmTable4.Designer.cs">
+      <DependentUpon>BasicFrmTable4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ItemManagement\ItemFrmMajor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\ItemManagement\ItemFrmMajor.Designer.cs">
+      <DependentUpon>ItemFrmMajor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\BasicInfo\BasicFrmMinor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\BasicInfo\BasicFrmMinor.Designer.cs">
+      <DependentUpon>BasicFrmMinor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\BasicInfo\BasicFrmTable3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\BasicInfo\BasicFrmTable3.Designer.cs">
+      <DependentUpon>BasicFrmTable3.cs</DependentUpon>
     </Compile>
     <Compile Include="Pages\FrmForgotPswd.cs">
       <SubType>Form</SubType>
@@ -142,19 +201,145 @@
     <Compile Include="Pages\FrmMenu.Designer.cs">
       <DependentUpon>FrmMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pages\ItemManagement\ItemFrmMinor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\ItemManagement\ItemFrmMinor.Designer.cs">
+      <DependentUpon>ItemFrmMinor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\OrderManagement\OrderFrmIssueDeliveryNote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\OrderManagement\OrderFrmIssueDeliveryNote.Designer.cs">
+      <DependentUpon>OrderFrmIssueDeliveryNote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\OrderManagement\OrderFrmMajor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\OrderManagement\OrderFrmMajor.Designer.cs">
+      <DependentUpon>OrderFrmMajor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\OrderManagement\OrderFrmMinor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\OrderManagement\OrderFrmMinor.Designer.cs">
+      <DependentUpon>OrderFrmMinor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\OrderManagement\OrderFrmPMCreatePO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\OrderManagement\OrderFrmPMCreatePO.Designer.cs">
+      <DependentUpon>OrderFrmPMCreatePO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\OrderManagement\OrderFrmTable3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\OrderManagement\OrderFrmTable3.Designer.cs">
+      <DependentUpon>OrderFrmTable3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\OrderManagement\OrderFrmTable4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\OrderManagement\OrderFrmTable4.Designer.cs">
+      <DependentUpon>OrderFrmTable4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\OrderManagement\OrderFrmTable5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\OrderManagement\OrderFrmTable5.Designer.cs">
+      <DependentUpon>OrderFrmTable5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Report\ReportFrmMajor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\Report\ReportFrmMajor.Designer.cs">
+      <DependentUpon>ReportFrmMajor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Report\ReportFrmMinor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\Report\ReportFrmMinor.Designer.cs">
+      <DependentUpon>ReportFrmMinor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Report\ReportFrmTable3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\Report\ReportFrmTable3.Designer.cs">
+      <DependentUpon>ReportFrmTable3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\RequestManagement\RequestFrmCreateNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\RequestManagement\RequestFrmCreateNew.Designer.cs">
+      <DependentUpon>RequestFrmCreateNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\RequestManagement\RequestFrmMajor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\RequestManagement\RequestFrmMajor.Designer.cs">
+      <DependentUpon>RequestFrmMajor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\RequestManagement\RequestFrmMinor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\RequestManagement\RequestFrmMinor.Designer.cs">
+      <DependentUpon>RequestFrmMinor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\RequestManagement\RequestFrmTable3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\RequestManagement\RequestFrmTable3.Designer.cs">
+      <DependentUpon>RequestFrmTable3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\StockManagement\StockFrmMajor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\StockManagement\StockFrmMajor.Designer.cs">
+      <DependentUpon>StockFrmMajor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\StockManagement\StockFrmMinor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\StockManagement\StockFrmMinor.Designer.cs">
+      <DependentUpon>StockFrmMinor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Pages\BasicInfo\FrmMajor.resx">
-      <DependentUpon>FrmMajor.cs</DependentUpon>
+    <EmbeddedResource Include="Pages\AgreementManagement\AgreeFrmCreateBPA.resx">
+      <DependentUpon>AgreeFrmCreateBPA.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pages\BasicInfo\FrmMinor.resx">
-      <DependentUpon>FrmMinor.cs</DependentUpon>
+    <EmbeddedResource Include="Pages\AgreementManagement\AgreeFrmCreateCPA.resx">
+      <DependentUpon>AgreeFrmCreateCPA.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pages\BasicInfo\FrmTable3.resx">
-      <DependentUpon>FrmTable3.cs</DependentUpon>
+    <EmbeddedResource Include="Pages\AgreementManagement\AgreeFrmEditBPA.resx">
+      <DependentUpon>AgreeFrmEditBPA.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pages\BasicInfo\FrmTable4.resx">
-      <DependentUpon>FrmTable4.cs</DependentUpon>
+    <EmbeddedResource Include="Pages\AgreementManagement\AgreeFrmEditCPA.resx">
+      <DependentUpon>AgreeFrmEditCPA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\AgreementManagement\AgreeFrmMajor.resx">
+      <DependentUpon>AgreeFrmMajor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\AgreementManagement\AgreeFrmMinor.resx">
+      <DependentUpon>AgreeFrmMinor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\AgreementManagement\AgreeFrmTable3.resx">
+      <DependentUpon>AgreeFrmTable3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\BasicInfo\BasicFrmMajor.resx">
+      <DependentUpon>BasicFrmMajor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\BasicInfo\BasicFrmTable4.resx">
+      <DependentUpon>BasicFrmTable4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\ItemManagement\ItemFrmMajor.resx">
+      <DependentUpon>ItemFrmMajor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\BasicInfo\BasicFrmMinor.resx">
+      <DependentUpon>BasicFrmMinor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\BasicInfo\BasicFrmTable3.resx">
+      <DependentUpon>BasicFrmTable3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\FrmForgotPswd.resx">
       <DependentUpon>FrmForgotPswd.cs</DependentUpon>
@@ -171,6 +356,57 @@
     <EmbeddedResource Include="Pages\FrmMenu.resx">
       <DependentUpon>FrmMenu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Pages\ItemManagement\ItemFrmMinor.resx">
+      <DependentUpon>ItemFrmMinor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\OrderManagement\OrderFrmIssueDeliveryNote.resx">
+      <DependentUpon>OrderFrmIssueDeliveryNote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\OrderManagement\OrderFrmMajor.resx">
+      <DependentUpon>OrderFrmMajor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\OrderManagement\OrderFrmMinor.resx">
+      <DependentUpon>OrderFrmMinor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\OrderManagement\OrderFrmPMCreatePO.resx">
+      <DependentUpon>OrderFrmPMCreatePO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\OrderManagement\OrderFrmTable3.resx">
+      <DependentUpon>OrderFrmTable3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\OrderManagement\OrderFrmTable4.resx">
+      <DependentUpon>OrderFrmTable4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\OrderManagement\OrderFrmTable5.resx">
+      <DependentUpon>OrderFrmTable5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Report\ReportFrmMajor.resx">
+      <DependentUpon>ReportFrmMajor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Report\ReportFrmMinor.resx">
+      <DependentUpon>ReportFrmMinor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Report\ReportFrmTable3.resx">
+      <DependentUpon>ReportFrmTable3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\RequestManagement\RequestFrmCreateNew.resx">
+      <DependentUpon>RequestFrmCreateNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\RequestManagement\RequestFrmMajor.resx">
+      <DependentUpon>RequestFrmMajor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\RequestManagement\RequestFrmMinor.resx">
+      <DependentUpon>RequestFrmMinor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\RequestManagement\RequestFrmTable3.resx">
+      <DependentUpon>RequestFrmTable3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\StockManagement\StockFrmMajor.resx">
+      <DependentUpon>StockFrmMajor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\StockManagement\StockFrmMinor.resx">
+      <DependentUpon>StockFrmMinor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -181,6 +417,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="dbDataSet.xsc">
+      <DependentUpon>dbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="dbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbDataSet.xss">
+      <DependentUpon>dbDataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -196,9 +443,15 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="db.accdb">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    <None Include="Resources\cross_icon_16.png" />
+    <None Include="Resources\cross.png" />
+    <None Include="Resources\magnifier.png" />
+    <None Include="Resources\draw_dodge_burn.png" />
+    <None Include="Resources\table_row_delete.png" />
+    <None Include="Resources\table_row_insert.png" />
+    <None Include="Resources\disk.png" />
+    <None Include="Resources\application_form_magnify.png" />
+    <None Include="Resources\find.png" />
     <None Include="Resources\group.png" />
     <None Include="Resources\ceo.png" />
     <None Include="Resources\note.png" />
@@ -220,10 +473,16 @@
     <None Include="Resources\application_side_list.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Pages\AgreementManagement\" />
-    <Folder Include="Pages\ItemManagement\" />
-    <Folder Include="Pages\Report\" />
-    <Folder Include="Pages\RequestManagement\" />
+    <Content Include="db.accdb" />
+    <None Include="Resources\bullet_delete.png" />
+    <None Include="Resources\bullet_add.png" />
+    <None Include="Resources\cart_add.png" />
+    <None Include="Resources\chart_organisation.png" />
+    <None Include="Resources\building.png" />
+    <None Include="Resources\application_form_delete.png" />
+    <None Include="Resources\application_form_edit.png" />
+    <None Include="Resources\application_form_add.png" />
+    <None Include="Resources\application_view_list.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.8">

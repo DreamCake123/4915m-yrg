@@ -17,11 +17,11 @@ using System.Data.Common;
 using System.Collections.ObjectModel;
 using System.Windows.Forms.VisualStyles;
 
-namespace YRG_4915M
+namespace YRG_4915M.Pages.RequestManagement
 {
-    public partial class FrmHomePage : DockContent
+    public partial class RequestFrmMajor : DockContent
     {
-        public FrmHomePage()
+        public RequestFrmMajor()
         {
             InitializeComponent();
         }

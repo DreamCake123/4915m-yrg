@@ -17,9 +17,12 @@ namespace YRG_4915M
 {
     public partial class FrmMain : Form
     {
+        public static FrmMain FrmMain1;
+
         public FrmMain()
         {
             InitializeComponent();
+            FrmMain1 = this;
         }
 
         private void FrmMain_Load(object sender, EventArgs e)

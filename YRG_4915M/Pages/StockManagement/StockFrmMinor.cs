@@ -17,11 +17,11 @@ using System.Data.Common;
 using System.Collections.ObjectModel;
 using System.Windows.Forms.VisualStyles;
 
-namespace YRG_4915M.BasicInfo
+namespace YRG_4915M.Pages.StockManagement
 {
-    public partial class FrmMinor : DockContent
+    public partial class StockFrmMinor : DockContent
     {
-        public FrmMinor()
+        public StockFrmMinor()
         {
             InitializeComponent();
         }

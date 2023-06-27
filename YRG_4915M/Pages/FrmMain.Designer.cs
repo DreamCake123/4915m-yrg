@@ -41,7 +41,7 @@
             this.dockPanelMain.Name = "dockPanelMain";
             this.dockPanelMain.Padding = new System.Windows.Forms.Padding(6);
             this.dockPanelMain.ShowAutoHideContentOnHover = false;
-            this.dockPanelMain.Size = new System.Drawing.Size(1608, 1054);
+            this.dockPanelMain.Size = new System.Drawing.Size(1898, 1424);
             this.dockPanelMain.TabIndex = 1;
             this.dockPanelMain.Theme = this.vS2015BlueTheme1;
             // 
@@ -49,19 +49,19 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1608, 1054);
+            this.ClientSize = new System.Drawing.Size(1898, 1424);
             this.Controls.Add(this.dockPanelMain);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.IsMdiContainer = true;
             this.Name = "FrmMain";
-            this.Text = "YRGCPS Main";
+            this.Text = "Yummy Restaurant Group Centralized Procurement System (YRGCPS)";
             this.Load += new System.EventHandler(this.FrmMain_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private WeifenLuo.WinFormsUI.Docking.DockPanel dockPanelMain;
         private WeifenLuo.WinFormsUI.Docking.VS2015BlueTheme vS2015BlueTheme1;
+        public WeifenLuo.WinFormsUI.Docking.DockPanel dockPanelMain;
     }
 }

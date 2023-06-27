@@ -16,12 +16,13 @@ using System.Data.OleDb;
 using System.Data.Common;
 using System.Collections.ObjectModel;
 using System.Windows.Forms.VisualStyles;
+using YRG_4915M.Pages.ItemManagement;
 
-namespace YRG_4915M
+namespace YRG_4915M.Pages.BasicInfo
 {
-    public partial class FrmHomePage : DockContent
+    public partial class BasicFrmMinor : DockContent
     {
-        public FrmHomePage()
+        public BasicFrmMinor() 
         {
             InitializeComponent();
         }

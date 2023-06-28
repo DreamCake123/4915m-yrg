@@ -16,6 +16,7 @@ using System.Data.OleDb;
 using System.Data.Common;
 using System.Collections.ObjectModel;
 using System.Windows.Forms.VisualStyles;
+using YRG_4915M.Database;
 
 namespace YRG_4915M
 {
@@ -28,11 +29,38 @@ namespace YRG_4915M
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            FrmLogin frmLogin = new FrmLogin();
-            FrmMain frmMain = new FrmMain();
-            this.Hide();
-            frmMain.Show();
-            // this.close();
+            if(txtUserID.Text == "" || txtPswd.Text == "")
+            {
+                return;
+            }
+            int inputUserId = 0;
+            try
+            {
+                inputUserId = Int32.Parse(txtUserID.Text);
+            }
+            catch (FormatException ex)
+            {
+                MessageBox.Show("Please input a valid user ID\n"+ex);
+                return;
+            }
+            Dictionary<string, object> paramList = new Dictionary<string, object> ();
+            paramList.Add("@userid", inputUserId);
+            List<object> dataRow = DatabaseAdapter.retrieveDataOneCol("SELECT [UserPswd] FROM [User] WHERE [UserName]=?;", paramList);
+            if(dataRow.Count < 1)
+            {
+                MessageBox.Show("Incorrect username or password");
+                return;
+            }
+            if ((string)dataRow[0] == txtPswd.Text)
+            {
+                FrmMain frmMain = new FrmMain();
+                this.Hide();
+                frmMain.Show();
+            }
+            else
+            {
+                MessageBox.Show("Incorrect username or password");
+            }
         }
 
         private void btnCancelLogin_Click(object sender, EventArgs e)
@@ -43,7 +71,6 @@ namespace YRG_4915M
 
         private void lblForgotPswd_Click(object sender, EventArgs e)
         {
-            FrmLogin frmLogin = new FrmLogin();
             FrmForgotPswd frmForgotPswd = new FrmForgotPswd();
             this.Hide();
             frmForgotPswd.Show();

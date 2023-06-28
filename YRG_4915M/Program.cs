@@ -14,6 +14,7 @@ namespace YRG_4915M
         [STAThread]
         static void Main()
         {
+            //Form Application
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new FrmLogin());

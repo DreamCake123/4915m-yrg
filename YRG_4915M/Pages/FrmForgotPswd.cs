@@ -17,6 +17,20 @@ namespace YRG_4915M
             InitializeComponent();
         }
 
+        private void btnEnter_Click(object sender, EventArgs e)
+        {
+            FrmForgotPswd frmForgot = new FrmForgotPswd();
+            FrmLogin frmLogin = new FrmLogin();
+            this.Hide();
+            frmLogin.Show();
+        }
+
+        private void btnCancelLogin_Click(object sender, EventArgs e)
+        {
+            txtUserID.Text = string.Empty;
+            txtUserEmail.Text = string.Empty;
+        }
+
         private void lblBack_Click(object sender, EventArgs e)
         {
             FrmForgotPswd frmForgotPswd = new FrmForgotPswd();
@@ -25,12 +39,5 @@ namespace YRG_4915M
             frmLogin.Show();
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
-        {
-            FrmLogin frmLogin = new FrmLogin();
-            FrmForgotPswd frmForgotPswd = new FrmForgotPswd();
-            this.Hide();
-            frmForgotPswd.Show();
-        }
     }
 }

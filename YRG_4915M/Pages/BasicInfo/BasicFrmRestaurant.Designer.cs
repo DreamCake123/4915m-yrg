@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.dgvSupplierInfo = new Krypton.Toolkit.KryptonDataGridView();
+            this.dgvRestaurantInfo = new Krypton.Toolkit.KryptonDataGridView();
             this.kryptonHeader3 = new Krypton.Toolkit.KryptonHeader();
             this.kryptonHeader1 = new Krypton.Toolkit.KryptonHeader();
             this.btnDelete = new Krypton.Toolkit.ButtonSpecAny();
@@ -47,11 +47,10 @@
             this.lblRestaurantAddress = new Krypton.Toolkit.KryptonLabel();
             this.txtRestaurantAddress = new Krypton.Toolkit.KryptonTextBox();
             this.buttonSpecAny3 = new Krypton.Toolkit.ButtonSpecAny();
-            this.kryptonHeader2 = new Krypton.Toolkit.KryptonHeader();
-            this.btnAddSupplier = new Krypton.Toolkit.ButtonSpecAny();
-            this.btnSaveEdit = new Krypton.Toolkit.ButtonSpecAny();
+            this.btnAdd = new Krypton.Toolkit.ButtonSpecAny();
+            this.btnSave = new Krypton.Toolkit.ButtonSpecAny();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvSupplierInfo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRestaurantInfo)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cbBranch)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
@@ -62,12 +61,11 @@
             this.tableLayoutPanel1.BackColor = System.Drawing.Color.LightSteelBlue;
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Controls.Add(this.dgvSupplierInfo, 0, 5);
+            this.tableLayoutPanel1.Controls.Add(this.dgvRestaurantInfo, 0, 5);
             this.tableLayoutPanel1.Controls.Add(this.kryptonHeader3, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.kryptonHeader1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.kryptonHeader2, 0, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -82,25 +80,25 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1898, 1370);
             this.tableLayoutPanel1.TabIndex = 4;
             // 
-            // dgvSupplierInfo
+            // dgvRestaurantInfo
             // 
-            this.dgvSupplierInfo.AllowUserToAddRows = false;
-            this.dgvSupplierInfo.AllowUserToDeleteRows = false;
-            this.dgvSupplierInfo.AllowUserToResizeRows = false;
-            this.dgvSupplierInfo.ColumnHeadersHeight = 28;
-            this.dgvSupplierInfo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvSupplierInfo.Location = new System.Drawing.Point(3, 327);
-            this.dgvSupplierInfo.Name = "dgvSupplierInfo";
-            this.dgvSupplierInfo.RowHeadersWidth = 75;
-            this.dgvSupplierInfo.RowTemplate.Height = 29;
-            this.dgvSupplierInfo.Size = new System.Drawing.Size(1892, 1040);
-            this.dgvSupplierInfo.TabIndex = 8;
+            this.dgvRestaurantInfo.AllowUserToAddRows = false;
+            this.dgvRestaurantInfo.AllowUserToDeleteRows = false;
+            this.dgvRestaurantInfo.AllowUserToResizeRows = false;
+            this.dgvRestaurantInfo.ColumnHeadersHeight = 28;
+            this.dgvRestaurantInfo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvRestaurantInfo.Location = new System.Drawing.Point(3, 282);
+            this.dgvRestaurantInfo.Name = "dgvRestaurantInfo";
+            this.dgvRestaurantInfo.RowHeadersWidth = 75;
+            this.dgvRestaurantInfo.RowTemplate.Height = 29;
+            this.dgvRestaurantInfo.Size = new System.Drawing.Size(1892, 1085);
+            this.dgvRestaurantInfo.TabIndex = 8;
             // 
             // kryptonHeader3
             // 
             this.kryptonHeader3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonHeader3.HeaderStyle = Krypton.Toolkit.HeaderStyle.Form;
-            this.kryptonHeader3.Location = new System.Drawing.Point(3, 282);
+            this.kryptonHeader3.Location = new System.Drawing.Point(3, 237);
             this.kryptonHeader3.Name = "kryptonHeader3";
             this.kryptonHeader3.Size = new System.Drawing.Size(1892, 39);
             this.kryptonHeader3.TabIndex = 7;
@@ -112,6 +110,8 @@
             // 
             this.kryptonHeader1.ButtonSpecs.AddRange(new Krypton.Toolkit.ButtonSpecAny[] {
             this.btnDelete,
+            this.btnAdd,
+            this.btnSave,
             this.btnSearch});
             this.kryptonHeader1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonHeader1.HeaderStyle = Krypton.Toolkit.HeaderStyle.Form;
@@ -130,6 +130,7 @@
             this.btnDelete.Image = global::YRG_4915M.Properties.Resources.table_row_delete;
             this.btnDelete.Text = "Delete Restaurant";
             this.btnDelete.UniqueName = "c479132da6ba4c56863f52c6712fede5";
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnSearch
             // 
@@ -137,6 +138,7 @@
             this.btnSearch.Image = global::YRG_4915M.Properties.Resources.magnifier;
             this.btnSearch.Text = "Search Restaurant";
             this.btnSearch.UniqueName = "8d0470310cdc40eaa7db3181ff0e958a";
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // tableLayoutPanel2
             // 
@@ -255,7 +257,7 @@
             this.tableLayoutPanel3.Controls.Add(this.lblRestaurantAddress, 1, 1);
             this.tableLayoutPanel3.Controls.Add(this.txtRestaurantAddress, 2, 1);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(4, 190);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(4, 145);
             this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 3;
@@ -289,32 +291,21 @@
             this.buttonSpecAny3.Image = global::YRG_4915M.Properties.Resources.cross_icon_16;
             this.buttonSpecAny3.UniqueName = "6fb900f9fa524f45950d2ef28f395a0c";
             // 
-            // kryptonHeader2
+            // btnAdd
             // 
-            this.kryptonHeader2.ButtonSpecs.AddRange(new Krypton.Toolkit.ButtonSpecAny[] {
-            this.btnAddSupplier,
-            this.btnSaveEdit});
-            this.kryptonHeader2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonHeader2.HeaderStyle = Krypton.Toolkit.HeaderStyle.Form;
-            this.kryptonHeader2.Location = new System.Drawing.Point(3, 143);
-            this.kryptonHeader2.Name = "kryptonHeader2";
-            this.kryptonHeader2.Size = new System.Drawing.Size(1892, 39);
-            this.kryptonHeader2.TabIndex = 6;
-            this.kryptonHeader2.Values.Description = "";
-            this.kryptonHeader2.Values.Heading = "Restaurant Details";
-            this.kryptonHeader2.Values.Image = global::YRG_4915M.Properties.Resources.small_business;
+            this.btnAdd.Edge = Krypton.Toolkit.PaletteRelativeEdgeAlign.Near;
+            this.btnAdd.Image = global::YRG_4915M.Properties.Resources.table_row_insert;
+            this.btnAdd.Text = "Add Restaurant";
+            this.btnAdd.UniqueName = "66a105a2ab98437099d4d203bf85be9e";
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // btnAddSupplier
+            // btnSave
             // 
-            this.btnAddSupplier.Image = global::YRG_4915M.Properties.Resources.table_row_insert;
-            this.btnAddSupplier.Text = "Add New Restaurant";
-            this.btnAddSupplier.UniqueName = "89056b1c05be48e0ab9db38870d03853";
-            // 
-            // btnSaveEdit
-            // 
-            this.btnSaveEdit.Image = global::YRG_4915M.Properties.Resources.disk;
-            this.btnSaveEdit.Text = "Save Edit";
-            this.btnSaveEdit.UniqueName = "ed4e222bb7d842758ac2947385472210";
+            this.btnSave.Edge = Krypton.Toolkit.PaletteRelativeEdgeAlign.Near;
+            this.btnSave.Image = global::YRG_4915M.Properties.Resources.disk;
+            this.btnSave.Text = "Save Edit";
+            this.btnSave.UniqueName = "af8339bcca804cb988f98abd7df8749c";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // BasicFrmRestaurant
             // 
@@ -327,7 +318,7 @@
             this.Text = "YRGCPS Restaurant Management";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvSupplierInfo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRestaurantInfo)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cbBranch)).EndInit();
@@ -340,15 +331,13 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private Krypton.Toolkit.KryptonDataGridView dgvSupplierInfo;
+        private Krypton.Toolkit.KryptonDataGridView dgvRestaurantInfo;
         private Krypton.Toolkit.KryptonHeader kryptonHeader3;
         private Krypton.Toolkit.KryptonHeader kryptonHeader1;
         private Krypton.Toolkit.ButtonSpecAny btnDelete;
         private Krypton.Toolkit.ButtonSpecAny btnSearch;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private Krypton.Toolkit.KryptonLabel lblRestaurantID;
-        private Krypton.Toolkit.KryptonTextBox txtRestaurantID;
-        private Krypton.Toolkit.ButtonSpecAny btnInfoIDCancel;
         private Krypton.Toolkit.KryptonLabel lblBranch;
         private Krypton.Toolkit.KryptonLabel lblRestaurantTel;
         private Krypton.Toolkit.KryptonTextBox txtRestaurantTel;
@@ -357,9 +346,10 @@
         private Krypton.Toolkit.KryptonTextBox txtRestaurantAddress;
         private Krypton.Toolkit.ButtonSpecAny buttonSpecAny3;
         private Krypton.Toolkit.KryptonLabel lblRestaurantAddress;
-        private Krypton.Toolkit.KryptonHeader kryptonHeader2;
         private Krypton.Toolkit.KryptonComboBox cbBranch;
-        private Krypton.Toolkit.ButtonSpecAny btnAddSupplier;
-        private Krypton.Toolkit.ButtonSpecAny btnSaveEdit;
+        private Krypton.Toolkit.KryptonTextBox txtRestaurantID;
+        private Krypton.Toolkit.ButtonSpecAny btnInfoIDCancel;
+        private Krypton.Toolkit.ButtonSpecAny btnAdd;
+        private Krypton.Toolkit.ButtonSpecAny btnSave;
     }
 }

@@ -26,7 +26,7 @@ namespace YRG_4915M.Pages.BasicInfo
         public BasicFrmSupplier()
         {
             InitializeComponent();
-
+            showData();
         }
         private void showData()
         {

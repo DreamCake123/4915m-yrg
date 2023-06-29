@@ -27,22 +27,8 @@ namespace YRG_4915M.Pages.StockManagement
         {
             InitializeComponent();
             initComboBox();
+            initRestaurant();
             showData();
-            List<object> queryResult = DatabaseAdapter.retrieveDataOneCol($"SELECT [UserType] FROM [User] WHERE [UserName] = '{UserSingleton.username}';");
-            if(queryResult.Count <= 0)
-            {
-                txtRestaurantID.Enabled = false;
-                return;
-            }
-            string userType = (string)queryResult[0];
-            if ( userType == "Manager" || userType == "sysadmin")
-            {
-                txtRestaurantID.Enabled = true;
-            }
-            else
-            {
-                txtRestaurantID.Enabled = false;
-            }
         }
         //==========================================================================
         private void initComboBox()
@@ -63,6 +49,24 @@ namespace YRG_4915M.Pages.StockManagement
             }
             cbItemType.SelectedIndex = 0;
         }
+        private void initRestaurant()
+        {
+            List<object> queryResult = DatabaseAdapter.retrieveDataOneCol($"SELECT [UserType] FROM [User] WHERE [UserName] = '{UserSingleton.username}';");
+            if (queryResult.Count <= 0)
+            {
+                txtRestaurantID.Enabled = false;
+                return;
+            }
+            string userType = (string)queryResult[0];
+            if (userType == "Manager" || userType == "sysadmin")
+            {
+                txtRestaurantID.Enabled = true;
+            }
+            else
+            {
+                txtRestaurantID.Enabled = false;
+            }
+        }
         private void showData()
         {
             DataSet dataSet = DatabaseAdapter.retrieveDataSet("SELECT * FROM [RestaurantStockCount];");
@@ -79,7 +83,7 @@ namespace YRG_4915M.Pages.StockManagement
             }
             DataSet dataSet = DatabaseAdapter.retrieveDataSet(
                 "SELECT * FROM [RestaurantStockCount]" +
-                "WHERE [ItemVID] LIKE ? AND [ItemName] LIKE ? AND [ItemType] LIKE ? AND [RestID] LIKE ?;",
+                "WHERE [RestID] LIKE ? AND [ItemVID] LIKE ? AND [ItemName] LIKE ? AND [ItemType] LIKE ?;",
                 paramList);
             dgvStockCount.DataSource = dataSet.Tables[0];
             dgvStockCount.ClearSelection();
@@ -88,9 +92,20 @@ namespace YRG_4915M.Pages.StockManagement
         //==========================================================================
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            showData();
+            if (txtRestaurantID.Text == "" || txtVirtualItemId.Text == "" || txtItemName.Text == "" || cbItemType.SelectedIndex > 0)
+            {
+                Dictionary<string, string> conditions = new Dictionary<string, string>();
+                conditions.Add("@restId", txtRestaurantID.Text);
+                conditions.Add("@vId", txtVirtualItemId.Text);
+                conditions.Add("@name", txtItemName.Text);
+                conditions.Add("@type", cbItemType.Items[cbItemType.SelectedIndex].ToString());
+                showData(conditions);
+            }
+            else
+            {
+                showData();
+            }
         }
-
         private void btnSaveUpdate_Click(object sender, EventArgs e)
         {
 

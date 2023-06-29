@@ -33,21 +33,12 @@ namespace YRG_4915M
             {
                 return;
             }
-            int inputUserId = 0;
-            try
-            {
-                inputUserId = Int32.Parse(txtUserID.Text);
-            }
-            catch (FormatException ex)
-            {
-                MessageBox.Show("Please input a valid user ID\n"+ex);
-                return;
-            }
             Dictionary<string, object> paramList = new Dictionary<string, object> ();
-            paramList.Add("@userid", inputUserId);
-            List<object> dataRow = DatabaseAdapter.retrieveDataOneCol("SELECT [Passwd] FROM [User] WHERE [StaffID]=@userid;", paramList);
+            paramList.Add("@userid", txtUserID.Text);
+            List<object> dataRow = DatabaseAdapter.retrieveDataOneCol("SELECT [UserPswd] FROM [User] WHERE [UserName]=@userid;", paramList);
             if(dataRow.Count < 1)
             {
+                MessageBox.Show("Incorrect username or password");
                 return;
             }
             if ((string)dataRow[0] == txtPswd.Text)

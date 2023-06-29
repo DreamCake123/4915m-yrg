@@ -192,7 +192,7 @@ namespace YRG_4915M.Pages.BasicInfo
                 return;
             }
 
-            if (DatabaseAdapter.retrieveDataOneCol($"SELECT [RestaurantID] FROM [Restaurant] WHERE [RestaurantID]={id}").Count <= 0)
+            if (DatabaseAdapter.retrieveDataOneCol($"SELECT * FROM [User] WHERE [UserID]={id}").Count <= 0)
             {
                 MessageBox.Show("No entry found with input primary key for edit");
                 return;

@@ -76,7 +76,7 @@
             this.tableLayoutPanel1.Controls.Add(this.kryptonHeader2, 0, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 6;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
@@ -85,7 +85,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1898, 1370);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1687, 844);
             this.tableLayoutPanel1.TabIndex = 3;
             // 
             // dgvSupplierInfo
@@ -95,20 +95,22 @@
             this.dgvSupplierInfo.AllowUserToResizeRows = false;
             this.dgvSupplierInfo.ColumnHeadersHeight = 28;
             this.dgvSupplierInfo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvSupplierInfo.Location = new System.Drawing.Point(3, 327);
+            this.dgvSupplierInfo.Location = new System.Drawing.Point(3, 284);
+            this.dgvSupplierInfo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvSupplierInfo.Name = "dgvSupplierInfo";
             this.dgvSupplierInfo.RowHeadersWidth = 75;
             this.dgvSupplierInfo.RowTemplate.Height = 29;
-            this.dgvSupplierInfo.Size = new System.Drawing.Size(1892, 1040);
+            this.dgvSupplierInfo.Size = new System.Drawing.Size(1681, 558);
             this.dgvSupplierInfo.TabIndex = 8;
             // 
             // kryptonHeader3
             // 
             this.kryptonHeader3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonHeader3.HeaderStyle = Krypton.Toolkit.HeaderStyle.Form;
-            this.kryptonHeader3.Location = new System.Drawing.Point(3, 282);
+            this.kryptonHeader3.Location = new System.Drawing.Point(3, 241);
+            this.kryptonHeader3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kryptonHeader3.Name = "kryptonHeader3";
-            this.kryptonHeader3.Size = new System.Drawing.Size(1892, 39);
+            this.kryptonHeader3.Size = new System.Drawing.Size(1681, 39);
             this.kryptonHeader3.TabIndex = 7;
             this.kryptonHeader3.Values.Description = "";
             this.kryptonHeader3.Values.Heading = "Supplier Information";
@@ -123,9 +125,10 @@
             this.btnSearch});
             this.kryptonHeader1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonHeader1.HeaderStyle = Krypton.Toolkit.HeaderStyle.Form;
-            this.kryptonHeader1.Location = new System.Drawing.Point(3, 3);
+            this.kryptonHeader1.Location = new System.Drawing.Point(3, 2);
+            this.kryptonHeader1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kryptonHeader1.Name = "kryptonHeader1";
-            this.kryptonHeader1.Size = new System.Drawing.Size(1892, 40);
+            this.kryptonHeader1.Size = new System.Drawing.Size(1681, 40);
             this.kryptonHeader1.StateCommon.ButtonPadding = new System.Windows.Forms.Padding(3, 3, 16, 3);
             this.kryptonHeader1.TabIndex = 0;
             this.kryptonHeader1.Values.Description = "";
@@ -138,6 +141,7 @@
             this.btnDelete.Image = global::YRG_4915M.Properties.Resources.table_row_delete;
             this.btnDelete.Text = "Delete Supplier";
             this.btnDelete.UniqueName = "c479132da6ba4c56863f52c6712fede5";
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnCreate
             // 
@@ -145,6 +149,7 @@
             this.btnCreate.Image = global::YRG_4915M.Properties.Resources.table_row_insert;
             this.btnCreate.Text = "Add New Supplier";
             this.btnCreate.UniqueName = "b2e1ffa964f74685978df328c355fa19";
+            this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
             // 
             // btnSave
             // 
@@ -152,6 +157,7 @@
             this.btnSave.Image = global::YRG_4915M.Properties.Resources.disk;
             this.btnSave.Text = "Save";
             this.btnSave.UniqueName = "3627c85bd04a4878ba01ef0465c70b0d";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnSearch
             // 
@@ -159,18 +165,19 @@
             this.btnSearch.Image = global::YRG_4915M.Properties.Resources.magnifier;
             this.btnSearch.Text = "Search";
             this.btnSearch.UniqueName = "8d0470310cdc40eaa7db3181ff0e958a";
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.AutoSize = true;
             this.tableLayoutPanel2.ColumnCount = 12;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 15F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 13F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 36F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 36F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
@@ -183,21 +190,22 @@
             this.tableLayoutPanel2.Controls.Add(this.lblSuppTel, 7, 1);
             this.tableLayoutPanel2.Controls.Add(this.txtSuppTel, 8, 1);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(4, 51);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(4, 48);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 3;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 17F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 17F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1890, 84);
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 14F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 14F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1679, 68);
             this.tableLayoutPanel2.TabIndex = 1;
             // 
             // lblSuppId
             // 
-            this.lblSuppId.Location = new System.Drawing.Point(18, 20);
+            this.lblSuppId.Location = new System.Drawing.Point(16, 16);
+            this.lblSuppId.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblSuppId.Name = "lblSuppId";
-            this.lblSuppId.Size = new System.Drawing.Size(103, 29);
+            this.lblSuppId.Size = new System.Drawing.Size(87, 24);
             this.lblSuppId.TabIndex = 0;
             this.lblSuppId.Values.Text = "Supplier ID";
             // 
@@ -207,9 +215,10 @@
             this.btnInfoIDCancel});
             this.txtSuppId.CueHint.CueHintText = "ID";
             this.txtSuppId.CueHint.Padding = new System.Windows.Forms.Padding(0);
-            this.txtSuppId.Location = new System.Drawing.Point(127, 20);
+            this.txtSuppId.Location = new System.Drawing.Point(109, 16);
+            this.txtSuppId.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSuppId.Name = "txtSuppId";
-            this.txtSuppId.Size = new System.Drawing.Size(210, 31);
+            this.txtSuppId.Size = new System.Drawing.Size(187, 27);
             this.txtSuppId.TabIndex = 6;
             // 
             // btnInfoIDCancel
@@ -219,9 +228,10 @@
             // 
             // lblSuppName
             // 
-            this.lblSuppName.Location = new System.Drawing.Point(383, 20);
+            this.lblSuppName.Location = new System.Drawing.Point(338, 16);
+            this.lblSuppName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblSuppName.Name = "lblSuppName";
-            this.lblSuppName.Size = new System.Drawing.Size(134, 29);
+            this.lblSuppName.Size = new System.Drawing.Size(113, 24);
             this.lblSuppName.TabIndex = 1;
             this.lblSuppName.Values.Text = "Supplier Name";
             // 
@@ -231,9 +241,10 @@
             this.buttonSpecAny1});
             this.txtSuppName.CueHint.CueHintText = "Name";
             this.txtSuppName.CueHint.Padding = new System.Windows.Forms.Padding(0);
-            this.txtSuppName.Location = new System.Drawing.Point(523, 20);
+            this.txtSuppName.Location = new System.Drawing.Point(457, 16);
+            this.txtSuppName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSuppName.Name = "txtSuppName";
-            this.txtSuppName.Size = new System.Drawing.Size(325, 31);
+            this.txtSuppName.Size = new System.Drawing.Size(289, 27);
             this.txtSuppName.TabIndex = 10;
             // 
             // buttonSpecAny1
@@ -243,9 +254,10 @@
             // 
             // lblSuppTel
             // 
-            this.lblSuppTel.Location = new System.Drawing.Point(894, 20);
+            this.lblSuppTel.Location = new System.Drawing.Point(788, 16);
+            this.lblSuppTel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblSuppTel.Name = "lblSuppTel";
-            this.lblSuppTel.Size = new System.Drawing.Size(113, 29);
+            this.lblSuppTel.Size = new System.Drawing.Size(95, 24);
             this.lblSuppTel.TabIndex = 2;
             this.lblSuppTel.Values.Text = "Supplier Tel.";
             // 
@@ -255,9 +267,10 @@
             this.buttonSpecAny2});
             this.txtSuppTel.CueHint.CueHintText = "Tel.";
             this.txtSuppTel.CueHint.Padding = new System.Windows.Forms.Padding(0);
-            this.txtSuppTel.Location = new System.Drawing.Point(1013, 20);
+            this.txtSuppTel.Location = new System.Drawing.Point(889, 16);
+            this.txtSuppTel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSuppTel.Name = "txtSuppTel";
-            this.txtSuppTel.Size = new System.Drawing.Size(210, 31);
+            this.txtSuppTel.Size = new System.Drawing.Size(187, 27);
             this.txtSuppTel.TabIndex = 11;
             // 
             // buttonSpecAny2
@@ -270,13 +283,13 @@
             this.tableLayoutPanel3.AutoScroll = true;
             this.tableLayoutPanel3.AutoSize = true;
             this.tableLayoutPanel3.ColumnCount = 10;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 15F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 13F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 36F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 36F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -287,22 +300,23 @@
             this.tableLayoutPanel3.Controls.Add(this.lblSuppEmail, 4, 1);
             this.tableLayoutPanel3.Controls.Add(this.txtSuppEmail, 5, 1);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(4, 190);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(4, 167);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 3;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 17F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 17F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(1890, 84);
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 14F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 14F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(1679, 68);
             this.tableLayoutPanel3.TabIndex = 5;
             // 
             // lblSuppContactPerson
             // 
-            this.lblSuppContactPerson.Location = new System.Drawing.Point(18, 20);
+            this.lblSuppContactPerson.Location = new System.Drawing.Point(16, 16);
+            this.lblSuppContactPerson.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblSuppContactPerson.Name = "lblSuppContactPerson";
-            this.lblSuppContactPerson.Size = new System.Drawing.Size(137, 29);
+            this.lblSuppContactPerson.Size = new System.Drawing.Size(115, 24);
             this.lblSuppContactPerson.TabIndex = 5;
             this.lblSuppContactPerson.Values.Text = "Contact Person";
             // 
@@ -312,9 +326,10 @@
             this.buttonSpecAny4});
             this.txtSuppContactPerson.CueHint.CueHintText = "Contact Person";
             this.txtSuppContactPerson.CueHint.Padding = new System.Windows.Forms.Padding(0);
-            this.txtSuppContactPerson.Location = new System.Drawing.Point(161, 20);
+            this.txtSuppContactPerson.Location = new System.Drawing.Point(137, 16);
+            this.txtSuppContactPerson.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSuppContactPerson.Name = "txtSuppContactPerson";
-            this.txtSuppContactPerson.Size = new System.Drawing.Size(272, 31);
+            this.txtSuppContactPerson.Size = new System.Drawing.Size(242, 27);
             this.txtSuppContactPerson.TabIndex = 13;
             // 
             // buttonSpecAny4
@@ -328,9 +343,10 @@
             this.buttonSpecAny3});
             this.txtSuppAddress.CueHint.CueHintText = "Address";
             this.txtSuppAddress.CueHint.Padding = new System.Windows.Forms.Padding(0);
-            this.txtSuppAddress.Location = new System.Drawing.Point(1142, 20);
+            this.txtSuppAddress.Location = new System.Drawing.Point(999, 16);
+            this.txtSuppAddress.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSuppAddress.Name = "txtSuppAddress";
-            this.txtSuppAddress.Size = new System.Drawing.Size(420, 31);
+            this.txtSuppAddress.Size = new System.Drawing.Size(373, 27);
             this.txtSuppAddress.TabIndex = 12;
             // 
             // buttonSpecAny3
@@ -340,17 +356,19 @@
             // 
             // lblSuppAddress
             // 
-            this.lblSuppAddress.Location = new System.Drawing.Point(985, 20);
+            this.lblSuppAddress.Location = new System.Drawing.Point(866, 16);
+            this.lblSuppAddress.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblSuppAddress.Name = "lblSuppAddress";
-            this.lblSuppAddress.Size = new System.Drawing.Size(151, 29);
+            this.lblSuppAddress.Size = new System.Drawing.Size(127, 24);
             this.lblSuppAddress.TabIndex = 0;
             this.lblSuppAddress.Values.Text = "Supplier Address";
             // 
             // lblSuppEmail
             // 
-            this.lblSuppEmail.Location = new System.Drawing.Point(479, 20);
+            this.lblSuppEmail.Location = new System.Drawing.Point(421, 16);
+            this.lblSuppEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblSuppEmail.Name = "lblSuppEmail";
-            this.lblSuppEmail.Size = new System.Drawing.Size(129, 29);
+            this.lblSuppEmail.Size = new System.Drawing.Size(108, 24);
             this.lblSuppEmail.TabIndex = 1;
             this.lblSuppEmail.Values.Text = "Supplier Email";
             // 
@@ -360,9 +378,10 @@
             this.buttonSpecAny5});
             this.txtSuppEmail.CueHint.CueHintText = "Email";
             this.txtSuppEmail.CueHint.Padding = new System.Windows.Forms.Padding(0);
-            this.txtSuppEmail.Location = new System.Drawing.Point(614, 20);
+            this.txtSuppEmail.Location = new System.Drawing.Point(535, 16);
+            this.txtSuppEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSuppEmail.Name = "txtSuppEmail";
-            this.txtSuppEmail.Size = new System.Drawing.Size(325, 31);
+            this.txtSuppEmail.Size = new System.Drawing.Size(289, 27);
             this.txtSuppEmail.TabIndex = 14;
             // 
             // buttonSpecAny5
@@ -374,9 +393,10 @@
             // 
             this.kryptonHeader2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonHeader2.HeaderStyle = Krypton.Toolkit.HeaderStyle.Form;
-            this.kryptonHeader2.Location = new System.Drawing.Point(3, 143);
+            this.kryptonHeader2.Location = new System.Drawing.Point(3, 122);
+            this.kryptonHeader2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kryptonHeader2.Name = "kryptonHeader2";
-            this.kryptonHeader2.Size = new System.Drawing.Size(1892, 39);
+            this.kryptonHeader2.Size = new System.Drawing.Size(1681, 39);
             this.kryptonHeader2.TabIndex = 6;
             this.kryptonHeader2.Values.Description = "for Insert / Edit / Delete";
             this.kryptonHeader2.Values.Heading = "Supplier Details";
@@ -384,11 +404,12 @@
             // 
             // BasicFrmSupplier
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1898, 1370);
+            this.ClientSize = new System.Drawing.Size(1687, 844);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "BasicFrmSupplier";
             this.Text = "YRGCPS Supplier Management";
             this.tableLayoutPanel1.ResumeLayout(false);

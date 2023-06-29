@@ -718,6 +718,7 @@
             this.btnDeleteStaff.Image = global::YRG_4915M.Properties.Resources.table_row_delete;
             this.btnDeleteStaff.Text = "Delete Staff";
             this.btnDeleteStaff.UniqueName = "c479132da6ba4c56863f52c6712fede5";
+            this.btnDeleteStaff.Click += new System.EventHandler(this.btnDeleteStaff_Click);
             // 
             // btnSearchStaff
             // 
@@ -725,6 +726,7 @@
             this.btnSearchStaff.Image = global::YRG_4915M.Properties.Resources.magnifier;
             this.btnSearchStaff.Text = "Search";
             this.btnSearchStaff.UniqueName = "8d0470310cdc40eaa7db3181ff0e958a";
+            this.btnSearchStaff.Click += new System.EventHandler(this.btnSearchStaff_Click);
             // 
             // tableLayoutPanel2
             // 
@@ -1061,12 +1063,14 @@
             this.btnAdd.Image = global::YRG_4915M.Properties.Resources.table_row_insert;
             this.btnAdd.Text = "Add New Staff";
             this.btnAdd.UniqueName = "a8e1c9a79eca47609aaa855bc2223816";
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnSave
             // 
             this.btnSave.Image = global::YRG_4915M.Properties.Resources.disk;
             this.btnSave.Text = "Save Edit";
             this.btnSave.UniqueName = "6a38ab92ace24b4ca0b587ece4449e17";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // BasicFrmStaff
             // 

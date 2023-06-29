@@ -16,6 +16,8 @@ using System.Data.OleDb;
 using System.Data.Common;
 using System.Collections.ObjectModel;
 using System.Windows.Forms.VisualStyles;
+using YRG_4915M.Database;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TreeView;
 
 namespace YRG_4915M.Pages.StockManagement
 {
@@ -24,6 +26,74 @@ namespace YRG_4915M.Pages.StockManagement
         public StockFrmRestaurant()
         {
             InitializeComponent();
+            initComboBox();
+            showData();
+            List<object> queryResult = DatabaseAdapter.retrieveDataOneCol($"SELECT [UserType] FROM [User] WHERE [UserName] = '{UserSingleton.username}';");
+            if(queryResult.Count <= 0)
+            {
+                txtRestaurantID.Enabled = false;
+                return;
+            }
+            string userType = (string)queryResult[0];
+            if ( userType == "Manager" || userType == "sysadmin")
+            {
+                txtRestaurantID.Enabled = true;
+            }
+            else
+            {
+                txtRestaurantID.Enabled = false;
+            }
+        }
+        //==========================================================================
+        private void initComboBox()
+        {
+            cbItemType.Items.Add("*All*");
+            List<object> dataRows = DatabaseAdapter.retrieveDataOneCol("SELECT [ItemTypeList] FROM [UtilTable];");
+            List<string> cbListValues = new List<string>();
+            foreach (object o in dataRows)
+            {
+                if (o != DBNull.Value)
+                {
+                    cbListValues.Add((string)o);
+                }
+            }
+            foreach (string s in cbListValues)
+            {
+                cbItemType.Items.Add(s);
+            }
+            cbItemType.SelectedIndex = 0;
+        }
+        private void showData()
+        {
+            DataSet dataSet = DatabaseAdapter.retrieveDataSet("SELECT * FROM [RestaurantStockCount];");
+            dgvStockCount.DataSource = dataSet.Tables[0];
+            dgvStockCount.ClearSelection();
+            dgvStockCount.CurrentCell = null;
+        }
+        private void showData(Dictionary<string, string> conditions)
+        {
+            Dictionary<string, object> paramList = new Dictionary<string, object>();
+            foreach (KeyValuePair<string, string> entry in conditions)
+            {
+                paramList.Add(entry.Key, $"%{entry.Value}%");
+            }
+            DataSet dataSet = DatabaseAdapter.retrieveDataSet(
+                "SELECT * FROM [RestaurantStockCount]" +
+                "WHERE [ItemVID] LIKE ? AND [ItemName] LIKE ? AND [ItemType] LIKE ? AND [RestID] LIKE ?;",
+                paramList);
+            dgvStockCount.DataSource = dataSet.Tables[0];
+            dgvStockCount.ClearSelection();
+            dgvStockCount.CurrentCell = null;
+        }
+        //==========================================================================
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            showData();
+        }
+
+        private void btnSaveUpdate_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

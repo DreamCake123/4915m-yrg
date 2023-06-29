@@ -91,6 +91,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Database\DatabaseAdapter.cs" />
+    <Compile Include="Database\UserSingleton.cs" />
     <Compile Include="dbDataSet.cs">
       <DependentUpon>dbDataSet.xsd</DependentUpon>
     </Compile>

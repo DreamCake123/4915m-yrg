@@ -43,6 +43,7 @@ namespace YRG_4915M
             }
             if ((string)dataRow[0] == txtPswd.Text)
             {
+                UserSingleton.username = txtUserID.Text;
                 FrmMain frmMain = new FrmMain();
                 this.Hide();
                 frmMain.Show();

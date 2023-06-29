@@ -55,6 +55,9 @@
             this.lblItemStockCountUpdateDate = new Krypton.Toolkit.KryptonLabel();
             this.txtItemStockCountUpdateDate = new Krypton.Toolkit.KryptonTextBox();
             this.buttonSpecAny6 = new Krypton.Toolkit.ButtonSpecAny();
+            this.kryptonLabel2 = new Krypton.Toolkit.KryptonLabel();
+            this.txtRestaurantID = new Krypton.Toolkit.KryptonTextBox();
+            this.buttonSpecAny1 = new Krypton.Toolkit.ButtonSpecAny();
             this.tlpItemSearch.SuspendLayout();
             this.tlpItemSearchCriteria.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cbItemType)).BeginInit();
@@ -75,6 +78,7 @@
             this.tlpItemSearch.Controls.Add(this.tableLayoutPanel1, 0, 3);
             this.tlpItemSearch.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tlpItemSearch.Location = new System.Drawing.Point(0, 0);
+            this.tlpItemSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tlpItemSearch.Name = "tlpItemSearch";
             this.tlpItemSearch.RowCount = 6;
             this.tlpItemSearch.RowStyles.Add(new System.Windows.Forms.RowStyle());
@@ -83,17 +87,17 @@
             this.tlpItemSearch.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tlpItemSearch.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tlpItemSearch.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpItemSearch.Size = new System.Drawing.Size(1898, 1370);
+            this.tlpItemSearch.Size = new System.Drawing.Size(1687, 844);
             this.tlpItemSearch.TabIndex = 1;
             // 
             // kryptonHeader1
             // 
             this.kryptonHeader1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonHeader1.HeaderStyle = Krypton.Toolkit.HeaderStyle.Form;
-            this.kryptonHeader1.Location = new System.Drawing.Point(2, 183);
+            this.kryptonHeader1.Location = new System.Drawing.Point(2, 156);
             this.kryptonHeader1.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonHeader1.Name = "kryptonHeader1";
-            this.kryptonHeader1.Size = new System.Drawing.Size(1894, 40);
+            this.kryptonHeader1.Size = new System.Drawing.Size(1683, 40);
             this.kryptonHeader1.StateCommon.Border.Color1 = System.Drawing.Color.DarkGray;
             this.kryptonHeader1.StateCommon.Border.Color2 = System.Drawing.Color.DarkGray;
             this.kryptonHeader1.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -102,7 +106,7 @@
             this.kryptonHeader1.StateCommon.ButtonPadding = new System.Windows.Forms.Padding(6, 6, 20, 6);
             this.kryptonHeader1.StateCommon.Content.Padding = new System.Windows.Forms.Padding(3);
             this.kryptonHeader1.TabIndex = 3;
-            this.kryptonHeader1.Values.Description = "for Edit Stock Count";
+            this.kryptonHeader1.Values.Description = "";
             this.kryptonHeader1.Values.Heading = "Item Stock Count";
             this.kryptonHeader1.Values.Image = global::YRG_4915M.Properties.Resources.application_form;
             // 
@@ -110,10 +114,10 @@
             // 
             this.headerSearch02.Dock = System.Windows.Forms.DockStyle.Fill;
             this.headerSearch02.HeaderStyle = Krypton.Toolkit.HeaderStyle.Form;
-            this.headerSearch02.Location = new System.Drawing.Point(2, 313);
+            this.headerSearch02.Location = new System.Drawing.Point(2, 268);
             this.headerSearch02.Margin = new System.Windows.Forms.Padding(2);
             this.headerSearch02.Name = "headerSearch02";
-            this.headerSearch02.Size = new System.Drawing.Size(1894, 44);
+            this.headerSearch02.Size = new System.Drawing.Size(1683, 44);
             this.headerSearch02.StateCommon.Border.Color1 = System.Drawing.Color.DarkGray;
             this.headerSearch02.StateCommon.Border.Color2 = System.Drawing.Color.DarkGray;
             this.headerSearch02.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -136,7 +140,7 @@
             this.headerSearch01.Location = new System.Drawing.Point(2, 2);
             this.headerSearch01.Margin = new System.Windows.Forms.Padding(2);
             this.headerSearch01.Name = "headerSearch01";
-            this.headerSearch01.Size = new System.Drawing.Size(1894, 46);
+            this.headerSearch01.Size = new System.Drawing.Size(1683, 46);
             this.headerSearch01.StateCommon.Border.Color1 = System.Drawing.Color.DarkGray;
             this.headerSearch01.StateCommon.Border.Color2 = System.Drawing.Color.DarkGray;
             this.headerSearch01.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -155,6 +159,7 @@
             this.btnSaveUpdate.ExtraText = "Save Stock Count Update";
             this.btnSaveUpdate.Image = global::YRG_4915M.Properties.Resources.disk;
             this.btnSaveUpdate.UniqueName = "872a252e0e884f5ab37f29475076dba2";
+            this.btnSaveUpdate.Click += new System.EventHandler(this.btnSaveUpdate_Click);
             // 
             // btnSearch
             // 
@@ -162,6 +167,7 @@
             this.btnSearch.Image = global::YRG_4915M.Properties.Resources.magnifier;
             this.btnSearch.Text = "Search Item";
             this.btnSearch.UniqueName = "4f6ee0408dfc46d4bc102babd366485b";
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // tlpItemSearchCriteria
             // 
@@ -170,13 +176,13 @@
             this.tlpItemSearchCriteria.AutoSize = true;
             this.tlpItemSearchCriteria.ColumnCount = 12;
             this.tlpItemSearch.SetColumnSpan(this.tlpItemSearchCriteria, 2);
-            this.tlpItemSearchCriteria.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 10F));
+            this.tlpItemSearchCriteria.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 9F));
             this.tlpItemSearchCriteria.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tlpItemSearchCriteria.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tlpItemSearchCriteria.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tlpItemSearchCriteria.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 36F));
             this.tlpItemSearchCriteria.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tlpItemSearchCriteria.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tlpItemSearchCriteria.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tlpItemSearchCriteria.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 36F));
             this.tlpItemSearchCriteria.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tlpItemSearchCriteria.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tlpItemSearchCriteria.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
@@ -186,38 +192,43 @@
             this.tlpItemSearchCriteria.Controls.Add(this.rbBoth, 8, 1);
             this.tlpItemSearchCriteria.Controls.Add(this.rbFB, 9, 1);
             this.tlpItemSearchCriteria.Controls.Add(this.rbGI, 10, 1);
-            this.tlpItemSearchCriteria.Controls.Add(this.kryptonLabel13, 1, 1);
-            this.tlpItemSearchCriteria.Controls.Add(this.txtVirtualItemId, 2, 1);
             this.tlpItemSearchCriteria.Controls.Add(this.kryptonLabel7, 4, 1);
-            this.tlpItemSearchCriteria.Controls.Add(this.txtItemName, 2, 2);
             this.tlpItemSearchCriteria.Controls.Add(this.cbItemType, 5, 1);
-            this.tlpItemSearchCriteria.Controls.Add(this.lblItemName, 1, 2);
+            this.tlpItemSearchCriteria.Controls.Add(this.txtItemName, 5, 2);
+            this.tlpItemSearchCriteria.Controls.Add(this.lblItemName, 4, 2);
+            this.tlpItemSearchCriteria.Controls.Add(this.txtVirtualItemId, 2, 2);
+            this.tlpItemSearchCriteria.Controls.Add(this.kryptonLabel13, 1, 2);
+            this.tlpItemSearchCriteria.Controls.Add(this.kryptonLabel2, 1, 1);
+            this.tlpItemSearchCriteria.Controls.Add(this.txtRestaurantID, 2, 1);
             this.tlpItemSearchCriteria.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tlpItemSearchCriteria.Location = new System.Drawing.Point(3, 53);
+            this.tlpItemSearchCriteria.Location = new System.Drawing.Point(3, 52);
+            this.tlpItemSearchCriteria.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tlpItemSearchCriteria.Name = "tlpItemSearchCriteria";
             this.tlpItemSearchCriteria.RowCount = 4;
-            this.tlpItemSearchCriteria.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
-            this.tlpItemSearchCriteria.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 45F));
-            this.tlpItemSearchCriteria.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 45F));
-            this.tlpItemSearchCriteria.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tlpItemSearchCriteria.Size = new System.Drawing.Size(1892, 125);
+            this.tlpItemSearchCriteria.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 8F));
+            this.tlpItemSearchCriteria.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
+            this.tlpItemSearchCriteria.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
+            this.tlpItemSearchCriteria.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tlpItemSearchCriteria.Size = new System.Drawing.Size(1681, 100);
             this.tlpItemSearchCriteria.TabIndex = 0;
             // 
             // kryptonLabel1
             // 
             this.kryptonLabel1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.kryptonLabel1.Location = new System.Drawing.Point(783, 18);
+            this.kryptonLabel1.Location = new System.Drawing.Point(787, 14);
+            this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kryptonLabel1.Name = "kryptonLabel1";
-            this.kryptonLabel1.Size = new System.Drawing.Size(129, 29);
+            this.kryptonLabel1.Size = new System.Drawing.Size(108, 24);
             this.kryptonLabel1.TabIndex = 7;
             this.kryptonLabel1.Values.Text = "Item Category";
             // 
             // rbBoth
             // 
             this.rbBoth.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.rbBoth.Location = new System.Drawing.Point(918, 18);
+            this.rbBoth.Location = new System.Drawing.Point(901, 14);
+            this.rbBoth.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rbBoth.Name = "rbBoth";
-            this.rbBoth.Size = new System.Drawing.Size(130, 29);
+            this.rbBoth.Size = new System.Drawing.Size(112, 24);
             this.rbBoth.TabIndex = 13;
             this.rbBoth.Values.ExtraText = "Both GI & FB";
             this.rbBoth.Values.Text = "";
@@ -225,9 +236,10 @@
             // rbFB
             // 
             this.rbFB.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.rbFB.Location = new System.Drawing.Point(1054, 18);
+            this.rbFB.Location = new System.Drawing.Point(1019, 14);
+            this.rbFB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rbFB.Name = "rbFB";
-            this.rbFB.Size = new System.Drawing.Size(203, 29);
+            this.rbFB.Size = new System.Drawing.Size(172, 24);
             this.rbFB.TabIndex = 12;
             this.rbFB.Values.ExtraText = "Food & Beverage (FB)";
             this.rbFB.Values.Text = "";
@@ -235,18 +247,20 @@
             // rbGI
             // 
             this.rbGI.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.rbGI.Location = new System.Drawing.Point(1263, 18);
+            this.rbGI.Location = new System.Drawing.Point(1197, 14);
+            this.rbGI.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rbGI.Name = "rbGI";
-            this.rbGI.Size = new System.Drawing.Size(171, 29);
+            this.rbGI.Size = new System.Drawing.Size(146, 24);
             this.rbGI.TabIndex = 11;
             this.rbGI.Values.Text = "General Items (GI)";
             // 
             // kryptonLabel13
             // 
             this.kryptonLabel13.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.kryptonLabel13.Location = new System.Drawing.Point(13, 18);
+            this.kryptonLabel13.Location = new System.Drawing.Point(12, 50);
+            this.kryptonLabel13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kryptonLabel13.Name = "kryptonLabel13";
-            this.kryptonLabel13.Size = new System.Drawing.Size(131, 29);
+            this.kryptonLabel13.Size = new System.Drawing.Size(110, 24);
             this.kryptonLabel13.TabIndex = 25;
             this.kryptonLabel13.Values.Text = "Virtual Item ID";
             // 
@@ -257,9 +271,10 @@
             this.buttonSpecAny9});
             this.txtVirtualItemId.CueHint.CueHintText = "Virtual Item ID (YRG)";
             this.txtVirtualItemId.CueHint.Padding = new System.Windows.Forms.Padding(0);
-            this.txtVirtualItemId.Location = new System.Drawing.Point(150, 17);
+            this.txtVirtualItemId.Location = new System.Drawing.Point(128, 48);
+            this.txtVirtualItemId.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtVirtualItemId.Name = "txtVirtualItemId";
-            this.txtVirtualItemId.Size = new System.Drawing.Size(271, 31);
+            this.txtVirtualItemId.Size = new System.Drawing.Size(241, 27);
             this.txtVirtualItemId.TabIndex = 26;
             // 
             // buttonSpecAny9
@@ -270,9 +285,10 @@
             // kryptonLabel7
             // 
             this.kryptonLabel7.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.kryptonLabel7.Location = new System.Drawing.Point(467, 18);
+            this.kryptonLabel7.Location = new System.Drawing.Point(411, 14);
+            this.kryptonLabel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kryptonLabel7.Name = "kryptonLabel7";
-            this.kryptonLabel7.Size = new System.Drawing.Size(94, 29);
+            this.kryptonLabel7.Size = new System.Drawing.Size(79, 24);
             this.kryptonLabel7.TabIndex = 14;
             this.kryptonLabel7.Values.Text = "Item Type";
             // 
@@ -283,9 +299,10 @@
             this.btnItemNameCancel});
             this.txtItemName.CueHint.CueHintText = "Item Name";
             this.txtItemName.CueHint.Padding = new System.Windows.Forms.Padding(0);
-            this.txtItemName.Location = new System.Drawing.Point(150, 62);
+            this.txtItemName.Location = new System.Drawing.Point(504, 48);
+            this.txtItemName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtItemName.Name = "txtItemName";
-            this.txtItemName.Size = new System.Drawing.Size(271, 31);
+            this.txtItemName.Size = new System.Drawing.Size(241, 27);
             this.txtItemName.TabIndex = 6;
             // 
             // btnItemNameCancel
@@ -301,18 +318,20 @@
             this.cbItemType.CueHint.Padding = new System.Windows.Forms.Padding(0);
             this.cbItemType.DropDownWidth = 179;
             this.cbItemType.IntegralHeight = false;
-            this.cbItemType.Location = new System.Drawing.Point(567, 18);
+            this.cbItemType.Location = new System.Drawing.Point(504, 13);
+            this.cbItemType.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbItemType.Name = "cbItemType";
-            this.cbItemType.Size = new System.Drawing.Size(170, 29);
+            this.cbItemType.Size = new System.Drawing.Size(151, 25);
             this.cbItemType.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.cbItemType.TabIndex = 15;
             // 
             // lblItemName
             // 
             this.lblItemName.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lblItemName.Location = new System.Drawing.Point(13, 63);
+            this.lblItemName.Location = new System.Drawing.Point(411, 50);
+            this.lblItemName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblItemName.Name = "lblItemName";
-            this.lblItemName.Size = new System.Drawing.Size(103, 29);
+            this.lblItemName.Size = new System.Drawing.Size(87, 24);
             this.lblItemName.TabIndex = 2;
             this.lblItemName.Values.Text = "Item Name";
             // 
@@ -323,11 +342,12 @@
             this.dgvStockCount.AllowUserToResizeRows = false;
             this.dgvStockCount.ColumnHeadersHeight = 28;
             this.dgvStockCount.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvStockCount.Location = new System.Drawing.Point(3, 362);
+            this.dgvStockCount.Location = new System.Drawing.Point(3, 316);
+            this.dgvStockCount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvStockCount.Name = "dgvStockCount";
             this.dgvStockCount.RowHeadersWidth = 75;
             this.dgvStockCount.RowTemplate.Height = 29;
-            this.dgvStockCount.Size = new System.Drawing.Size(1892, 1005);
+            this.dgvStockCount.Size = new System.Drawing.Size(1681, 526);
             this.dgvStockCount.TabIndex = 2;
             // 
             // tableLayoutPanel1
@@ -337,36 +357,38 @@
             this.tableLayoutPanel1.AutoSize = true;
             this.tableLayoutPanel1.ColumnCount = 7;
             this.tlpItemSearch.SetColumnSpan(this.tableLayoutPanel1, 2);
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 10F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 9F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 36F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 18F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 18F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 18F));
             this.tableLayoutPanel1.Controls.Add(this.kryptonLabel14, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.txtItemStock, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.lblItemStockCountUpdateDate, 4, 1);
             this.tableLayoutPanel1.Controls.Add(this.txtItemStockCountUpdateDate, 5, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 228);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 200);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 45F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1892, 80);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 8F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1681, 64);
             this.tableLayoutPanel1.TabIndex = 4;
             // 
             // kryptonLabel14
             // 
             this.kryptonLabel14.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.kryptonLabel14.Location = new System.Drawing.Point(13, 18);
+            this.kryptonLabel14.Location = new System.Drawing.Point(12, 14);
+            this.kryptonLabel14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kryptonLabel14.Name = "kryptonLabel14";
-            this.kryptonLabel14.Size = new System.Drawing.Size(154, 29);
+            this.kryptonLabel14.Size = new System.Drawing.Size(129, 24);
             this.kryptonLabel14.TabIndex = 27;
             this.kryptonLabel14.Values.Text = "Item Stock Count";
             // 
@@ -377,9 +399,10 @@
             this.buttonSpecAny10});
             this.txtItemStock.CueHint.CueHintText = "Item Stock Count";
             this.txtItemStock.CueHint.Padding = new System.Windows.Forms.Padding(0);
-            this.txtItemStock.Location = new System.Drawing.Point(173, 17);
+            this.txtItemStock.Location = new System.Drawing.Point(147, 12);
+            this.txtItemStock.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtItemStock.Name = "txtItemStock";
-            this.txtItemStock.Size = new System.Drawing.Size(209, 31);
+            this.txtItemStock.Size = new System.Drawing.Size(186, 27);
             this.txtItemStock.TabIndex = 28;
             // 
             // buttonSpecAny10
@@ -390,9 +413,10 @@
             // lblItemStockCountUpdateDate
             // 
             this.lblItemStockCountUpdateDate.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lblItemStockCountUpdateDate.Location = new System.Drawing.Point(428, 18);
+            this.lblItemStockCountUpdateDate.Location = new System.Drawing.Point(375, 14);
+            this.lblItemStockCountUpdateDate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblItemStockCountUpdateDate.Name = "lblItemStockCountUpdateDate";
-            this.lblItemStockCountUpdateDate.Size = new System.Drawing.Size(262, 29);
+            this.lblItemStockCountUpdateDate.Size = new System.Drawing.Size(220, 24);
             this.lblItemStockCountUpdateDate.TabIndex = 19;
             this.lblItemStockCountUpdateDate.Values.Text = "Item Stock Count Update Date";
             // 
@@ -403,9 +427,10 @@
             this.buttonSpecAny6});
             this.txtItemStockCountUpdateDate.CueHint.CueHintText = "i.e. 2023-01-23";
             this.txtItemStockCountUpdateDate.CueHint.Padding = new System.Windows.Forms.Padding(0);
-            this.txtItemStockCountUpdateDate.Location = new System.Drawing.Point(696, 17);
+            this.txtItemStockCountUpdateDate.Location = new System.Drawing.Point(601, 12);
+            this.txtItemStockCountUpdateDate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtItemStockCountUpdateDate.Name = "txtItemStockCountUpdateDate";
-            this.txtItemStockCountUpdateDate.Size = new System.Drawing.Size(197, 31);
+            this.txtItemStockCountUpdateDate.Size = new System.Drawing.Size(175, 27);
             this.txtItemStockCountUpdateDate.TabIndex = 20;
             // 
             // buttonSpecAny6
@@ -413,13 +438,42 @@
             this.buttonSpecAny6.Image = global::YRG_4915M.Properties.Resources.cross_icon_16;
             this.buttonSpecAny6.UniqueName = "6fb900f9fa524f45950d2ef28f395a0c";
             // 
+            // kryptonLabel2
+            // 
+            this.kryptonLabel2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.kryptonLabel2.Location = new System.Drawing.Point(12, 14);
+            this.kryptonLabel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.kryptonLabel2.Name = "kryptonLabel2";
+            this.kryptonLabel2.Size = new System.Drawing.Size(104, 24);
+            this.kryptonLabel2.TabIndex = 27;
+            this.kryptonLabel2.Values.Text = "Restauarnt ID";
+            // 
+            // txtRestaurantID
+            // 
+            this.txtRestaurantID.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtRestaurantID.ButtonSpecs.AddRange(new Krypton.Toolkit.ButtonSpecAny[] {
+            this.buttonSpecAny1});
+            this.txtRestaurantID.CueHint.CueHintText = "Restaurant ID";
+            this.txtRestaurantID.CueHint.Padding = new System.Windows.Forms.Padding(0);
+            this.txtRestaurantID.Location = new System.Drawing.Point(128, 12);
+            this.txtRestaurantID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtRestaurantID.Name = "txtRestaurantID";
+            this.txtRestaurantID.Size = new System.Drawing.Size(241, 27);
+            this.txtRestaurantID.TabIndex = 28;
+            // 
+            // buttonSpecAny1
+            // 
+            this.buttonSpecAny1.Image = global::YRG_4915M.Properties.Resources.cross_icon_16;
+            this.buttonSpecAny1.UniqueName = "6fb900f9fa524f45950d2ef28f395a0c";
+            // 
             // StockFrmRestaurant
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1898, 1370);
+            this.ClientSize = new System.Drawing.Size(1687, 844);
             this.Controls.Add(this.tlpItemSearch);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "StockFrmRestaurant";
             this.Text = "YRGPCS Restaurant Stock Management";
             this.tlpItemSearch.ResumeLayout(false);
@@ -463,5 +517,8 @@
         private Krypton.Toolkit.KryptonLabel lblItemStockCountUpdateDate;
         private Krypton.Toolkit.KryptonTextBox txtItemStockCountUpdateDate;
         private Krypton.Toolkit.ButtonSpecAny buttonSpecAny6;
+        private Krypton.Toolkit.KryptonLabel kryptonLabel2;
+        private Krypton.Toolkit.KryptonTextBox txtRestaurantID;
+        private Krypton.Toolkit.ButtonSpecAny buttonSpecAny1;
     }
 }
